@@ -42,7 +42,9 @@ function App({ repo }: AppProps) {
         className="w-16 h-16 rounded-lg"
       />
       {/* App Name */}
-      <div className="font-bold text-xs w-full">{appName(repo.name)}</div>
+      <div className="font-bold text-xs w-full">
+        {appName(repo.description)}
+      </div>
     </div>
   );
 }
