@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@esbuild-plugins/node-globals-polyfill': ^0.1.1
   '@esbuild-plugins/node-modules-polyfill': ^0.1.4
+  '@fontsource/urbanist': ^4.5.14
   '@octokit/rest': ^19.0.5
   '@tanstack/react-query': ^4.16.1
   '@types/react': ^18.0.24
@@ -19,6 +20,7 @@ specifiers:
   vite: ^3.2.3
 
 dependencies:
+  '@fontsource/urbanist': 4.5.14
   '@octokit/rest': 19.0.5
   '@tanstack/react-query': 4.16.1_biqbaboplfbrettd7655fr4n2y
   autoprefixer: 10.4.13_postcss@8.4.19
@@ -339,6 +341,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/urbanist/4.5.14:
+    resolution: {integrity: sha512-b2Lcb/hC7ydpM+fk+YJzwtZT3dnWZeNQGQy+0fev7lrA+RVo0cdpP/lNzcfbwvA0CQbSpD3JYe/DOHv15ch3Ug==}
+    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
