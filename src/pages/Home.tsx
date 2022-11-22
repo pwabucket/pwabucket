@@ -41,7 +41,7 @@ function App({ repo, isPlaceholder }: AppProps) {
       ) : (
         repo && (
           <img
-            src={appDomainPath(repo.name, "/icon@128.png")}
+            src={appDomainPath(repo.name, "/icon@192.png")}
             alt={repo.name}
             className="w-20 h-20 rounded-2xl"
             onClick={appClickHandler(repo.name)}
