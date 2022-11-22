@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 512 512" version="1.1" id="svg20" width="512" height="512"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <defs id="defs4">
+      <style id="style2">.cls-pwa-1{fill:#9c27b0;}.cls-pwa-2{fill:#7b1fa2;}.cls-pwa-3,.cls-pwa-4{fill:#fff;}.cls-pwa-4{opacity:0.8;}</style>
+   </defs>
+   <title id="title6">pwa</title>
+   <g id="Layer_2" data-name="Layer 2" transform="matrix(0.98456557,0,0,0.98456557,5.3925956,96.362239)">
+      <g id="Layer_1-2" data-name="Layer 1" transform="matrix(0.91878386,0,0,0.91878386,-47.817454,-115.87501)">
+         <polygon class="cls-pwa-1" points="92.8,0 0,33.3 14,156.1 92.8,200 171.7,156.1 186,33.3 " id="polygon8" transform="matrix(2.7526882,0,0,2.7526882,73.080089,27.321731)" />
+         <polygon class="cls-pwa-2" points="92.8,22.2 92.8,123.2 92.8,200 171.7,156.1 186,33.3 92.8,0 " id="polygon10" transform="matrix(2.7526882,0,0,2.7526882,73.080089,27.321731)" />
+         <path class="cls-pwa-3" d="m 412.21128,344.98195 10.18494,-25.6 h 29.45376 l -14.03872,-38.81291 17.61721,-44.04301 49.82366,132.12903 h -36.88602 l -8.53333,-23.67311 z" id="path12" style="stroke-width:2.75268" />
+         <path class="cls-pwa-4" d="m 380.83062,368.65506 53.40215,-132.12903 h -35.23441 l -36.61074,85.33334 -26.15054,-85.33334 h -27.25161 l -27.80215,85.33334 -19.81937,-38.81291 -17.89246,54.7785 18.16774,30.8301 h 34.95913 l 25.04947,-76.52473 24.22366,76.52473 z" id="path14" style="stroke-width:2.75268" />
+         <path class="cls-pwa-3" d="m 186.49084,323.23571 h 22.02151 a 58.356988,58.356988 0 0 0 17.6172,-2.20215 l 5.78065,-17.34194 15.69032,-48.44731 a 24.774193,24.774193 0 0 0 -4.12903,-5.23011 c -8.25807,-9.08387 -20.09463,-13.48817 -35.50968,-13.48817 h -55.05376 v 132.12903 h 33.58279 z m 28.90323,-56.43011 a 17.341935,17.341935 0 0 1 4.95484,12.93764 18.443011,18.443011 0 0 1 -4.12904,12.66236 c -3.30322,3.5785 -8.8086,5.23011 -17.06666,5.23011 h -12.66237 v -35.50968 h 12.93764 c 7.43225,0 12.93763,1.65162 15.96559,4.67957 z" id="path16" style="stroke-width:2.75268" />
+      </g>
+   </g>
+   <metadata id="metadata1115">
+      <rdf:RDF>
+         <cc:Work rdf:about="">
+            <dc:title>pwa</dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+</svg>
