@@ -1,11 +1,14 @@
 import { RestEndpointMethodTypes } from "@octokit/rest";
 import { useQuery } from "@tanstack/react-query";
 import { appClickHandler, appDomainPath } from "../core/helpers";
+import { repeatElement } from "../utils";
 import octokit from "../core/octokit";
 import Header from "../layouts/Header";
+import clsx from "clsx";
 
 interface AppProps {
-  repo: RestEndpointMethodTypes["repos"]["listForOrg"]["response"]["data"][number];
+  isPlaceholder?: boolean;
+  repo?: RestEndpointMethodTypes["repos"]["listForOrg"]["response"]["data"][number];
 }
 
 function Home() {
@@ -14,37 +17,45 @@ function Home() {
       org: import.meta.env.VITE_ORG_NAME,
     })
   );
+
   return (
     <div>
       <Header />
       <div className="container mx-auto p-2.5">
-        <h1 className="font-bold px-2">Apps</h1>
-        {isLoading && <p className="text-center">Loading</p>}
-        {isSuccess && (
-          <div className="py-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-            {data?.data.map((repo, i) => (
-              <App key={repo.name} repo={repo} />
-            ))}
-          </div>
-        )}
+        <div className="flex flex-wrap justify-center gap-2">
+          {isLoading && repeatElement(<App isPlaceholder />, 8)}
+          {isSuccess &&
+            data?.data.map((repo) => <App key={repo.id} repo={repo} />)}
+        </div>
       </div>
     </div>
   );
 }
 
-function App({ repo }: AppProps) {
+function App({ repo, isPlaceholder }: AppProps) {
   return (
-    <div>
+    <div className="flex flex-col w-20 gap-2">
       {/* App Icon */}
-      <img
-        src={appDomainPath(repo.name, "/icon@192.png")}
-        alt={repo.name}
-        className="w-16 h-16 rounded-lg"
-        onClick={appClickHandler(repo.name)}
-      />
+      {isPlaceholder ? (
+        <span className="w-20 h-20 bg-gray-100 rounded-2xl animate-pulse" />
+      ) : (
+        repo && (
+          <img
+            src={appDomainPath(repo.name, "/icon@128.png")}
+            alt={repo.name}
+            className="w-20 h-20 rounded-2xl"
+            onClick={appClickHandler(repo.name)}
+          />
+        )
+      )}
       {/* App Name */}
-      <div className="font-bold text-sm px-2 w-full text-ellipsis overflow-hidden">
-        {repo.description}
+      <div
+        className={clsx({
+          "w-full px-2 overflow-hidden text-sm font-bold": !isPlaceholder,
+          "h-2 animate-pulse bg-gray-100": isPlaceholder,
+        })}
+      >
+        {repo?.description}
       </div>
     </div>
   );
