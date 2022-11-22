@@ -1,6 +1,6 @@
 import { RestEndpointMethodTypes } from "@octokit/rest";
 import { useQuery } from "@tanstack/react-query";
-import { appDomainPath, appName } from "../core/helpers";
+import { appClickHandler, appDomainPath } from "../core/helpers";
 import octokit from "../core/octokit";
 import Header from "../layouts/Header";
 
@@ -21,7 +21,7 @@ function Home() {
         <h1 className="font-bold px-2">Apps</h1>
         {isLoading && <p className="text-center">Loading</p>}
         {isSuccess && (
-          <div className="py-3">
+          <div className="py-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
             {data?.data.map((repo, i) => (
               <App key={repo.name} repo={repo} />
             ))}
@@ -40,10 +40,11 @@ function App({ repo }: AppProps) {
         src={appDomainPath(repo.name, "/icon@192.png")}
         alt={repo.name}
         className="w-16 h-16 rounded-lg"
+        onClick={appClickHandler(repo.name)}
       />
       {/* App Name */}
-      <div className="font-bold text-xs w-full">
-        {appName(repo.description)}
+      <div className="font-bold text-sm px-2 w-full text-ellipsis overflow-hidden">
+        {repo.description}
       </div>
     </div>
   );
