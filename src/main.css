@@ -1,3 +1,9 @@
+/* Urbanist Font */
+@import "@fontsource/urbanist/400";
+@import "@fontsource/urbanist/500";
+@import "@fontsource/urbanist/600";
+@import "@fontsource/urbanist/700";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
