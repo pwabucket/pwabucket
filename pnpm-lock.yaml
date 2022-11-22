@@ -10,6 +10,7 @@ specifiers:
   '@types/react-dom': ^18.0.8
   '@vitejs/plugin-react': ^2.2.0
   autoprefixer: ^10.4.13
+  clsx: ^1.2.1
   postcss: ^8.4.19
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -24,6 +25,7 @@ dependencies:
   '@octokit/rest': 19.0.5
   '@tanstack/react-query': 4.16.1_biqbaboplfbrettd7655fr4n2y
   autoprefixer: 10.4.13_postcss@8.4.19
+  clsx: 1.2.1
   postcss: 8.4.19
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -698,6 +700,11 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: false
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert/1.9.3:
