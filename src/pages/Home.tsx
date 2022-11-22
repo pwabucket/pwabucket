@@ -51,7 +51,8 @@ function App({ repo, isPlaceholder }: AppProps) {
       {/* App Name */}
       <div
         className={clsx({
-          "w-full px-2 overflow-hidden text-sm font-bold": !isPlaceholder,
+          "w-full px-2 overflow-hidden text-sm font-bold text-ellipsis whitespace-nowrap":
+            !isPlaceholder,
           "h-2 animate-pulse bg-gray-100": isPlaceholder,
         })}
       >
