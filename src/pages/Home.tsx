@@ -22,7 +22,7 @@ function Home() {
     <div>
       <Header />
       <div className="container mx-auto p-2.5">
-        <div className="flex flex-wrap justify-center gap-2">
+        <div className="flex flex-wrap gap-2">
           {isLoading && repeatElement(<App isPlaceholder />, 8)}
           {isSuccess &&
             data?.data.map((repo) => <App key={repo.id} repo={repo} />)}
@@ -51,8 +51,7 @@ function App({ repo, isPlaceholder }: AppProps) {
       {/* App Name */}
       <div
         className={clsx({
-          "w-full px-2 overflow-hidden text-sm font-bold text-ellipsis whitespace-nowrap":
-            !isPlaceholder,
+          "px-1 text-center text-xs font-semibold": !isPlaceholder,
           "h-2 animate-pulse bg-gray-100": isPlaceholder,
         })}
       >
