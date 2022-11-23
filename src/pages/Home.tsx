@@ -25,7 +25,7 @@ function Home() {
         <div className="px-2 py-4">
           <h1 className="font-bold text-2xl">Apps</h1>
         </div>
-        <div className="grid gap-4 grid-cols-[repeat(auto-fill,_minmax(theme(spacing.20),_1fr))] justify-center">
+        <div className="[--grid-items-width:theme(spacing.20)] sm:[--grid-items-width:theme(spacing.24)] lg:[--grid-items-width:theme(spacing.28)] grid gap-4 grid-cols-[repeat(auto-fill,_minmax(var(--grid-items-width),_1fr))] justify-center">
           {isLoading && repeatElement(<App isPlaceholder />, 6)}
           {isSuccess &&
             data?.data.map((repo) => <App key={repo.id} repo={repo} />)}
@@ -55,7 +55,7 @@ function App({ repo, isPlaceholder }: AppProps) {
         {/* App Name */}
         <div
           className={clsx({
-            "text-sm text-center font-semibold": !isPlaceholder,
+            "text-sm font-semibold text-center": !isPlaceholder,
             "h-2 animate-pulse bg-gray-100 rounded-lg": isPlaceholder,
           })}
         >
