@@ -60,7 +60,7 @@ function App({ repo, isPlaceholder }: AppProps) {
           <img
             src={appDomainPath(repo.name, "/icon@192.png")}
             alt={repo.name}
-            className="flex-none w-full rounded-2xl shadow aspect-square"
+            className="flex-none w-full rounded-2xl shadow dark:bg-stone-700 aspect-square"
             onClick={appClickHandler(repo.name)}
           />
         )
