@@ -12,12 +12,15 @@ export function appDomainPath(name: string, path: string) {
 
 export function appClickHandler(name: string) {
   return function () {
-    const width = (window.outerWidth * 70) / 100;
-    const height = (window.outerHeight * 90) / 100;
+    const width = (window.outerWidth * 80) / 100;
+    const height = (window.outerHeight * 80) / 100;
+    const left = (window.outerWidth - width) / 2;
+    const top = (window.outerHeight - height) / 2;
+
     window.open(
       appDomain(name),
-      "_blank",
-      `popup,left=100,top=100,width=${width},height=${height}`
+      undefined,
+      `popup,left=${left},top=${top},width=${width},height=${height}`
     );
   };
 }
