@@ -21,9 +21,12 @@ function Home() {
   return (
     <div>
       <Header />
-      <div className="container mx-auto p-2.5">
-        <div className="flex flex-wrap gap-2">
-          {isLoading && repeatElement(<App isPlaceholder />, 8)}
+      <div className="container mx-auto p-4">
+        <div className="px-2 py-4">
+          <h1 className="font-bold text-2xl">Apps</h1>
+        </div>
+        <div className="grid gap-4 grid-cols-[repeat(auto-fill,_minmax(theme(spacing.20),_1fr))] justify-center">
+          {isLoading && repeatElement(<App isPlaceholder />, 6)}
           {isSuccess &&
             data?.data.map((repo) => <App key={repo.id} repo={repo} />)}
         </div>
@@ -34,28 +37,30 @@ function Home() {
 
 function App({ repo, isPlaceholder }: AppProps) {
   return (
-    <div className="flex flex-col w-20 gap-2">
+    <div className="flex flex-col gap-2">
       {/* App Icon */}
       {isPlaceholder ? (
-        <span className="w-20 h-20 bg-gray-100 rounded-2xl animate-pulse" />
+        <span className="flex-none w-full bg-gray-100 rounded-2xl shadow aspect-square animate-pulse" />
       ) : (
         repo && (
           <img
             src={appDomainPath(repo.name, "/icon@192.png")}
             alt={repo.name}
-            className="w-20 h-20 rounded-2xl"
+            className="flex-none w-full rounded-2xl shadow aspect-square"
             onClick={appClickHandler(repo.name)}
           />
         )
       )}
-      {/* App Name */}
-      <div
-        className={clsx({
-          "px-1 text-center text-xs font-semibold": !isPlaceholder,
-          "h-2 animate-pulse bg-gray-100": isPlaceholder,
-        })}
-      >
-        {repo?.description}
+      <div className="flex flex-col gap-1 flex-1">
+        {/* App Name */}
+        <div
+          className={clsx({
+            "text-sm text-center font-semibold": !isPlaceholder,
+            "h-2 animate-pulse bg-gray-100 rounded-lg": isPlaceholder,
+          })}
+        >
+          {repo?.description}
+        </div>
       </div>
     </div>
   );
