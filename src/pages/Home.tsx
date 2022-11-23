@@ -3,12 +3,26 @@ import { useQuery } from "@tanstack/react-query";
 import { appClickHandler, appDomainPath } from "../core/helpers";
 import { repeatElement } from "../utils";
 import octokit from "../core/octokit";
-import Header from "../layouts/Header";
 import clsx from "clsx";
 
 interface AppProps {
   isPlaceholder?: boolean;
   repo?: RestEndpointMethodTypes["repos"]["listForOrg"]["response"]["data"][number];
+}
+
+function Header() {
+  return (
+    <div className="sticky top-0 bg-white dark:bg-stone-900 shadow">
+      <div className="container mx-auto p-2.5 flex font-bold justify-center items-center gap-2">
+        <img
+          src="/icon@192.png"
+          className="w-10 h-10"
+          alt={import.meta.env.VITE_APP_NAME}
+        />
+        <h1>{import.meta.env.VITE_APP_NAME}</h1>
+      </div>
+    </div>
+  );
 }
 
 function Home() {
@@ -40,7 +54,7 @@ function App({ repo, isPlaceholder }: AppProps) {
     <div className="flex flex-col gap-2">
       {/* App Icon */}
       {isPlaceholder ? (
-        <span className="flex-none w-full bg-gray-100 rounded-2xl shadow aspect-square animate-pulse" />
+        <span className="flex-none w-full bg-stone-100 dark:bg-stone-700 rounded-2xl shadow aspect-square animate-pulse" />
       ) : (
         repo && (
           <img
@@ -56,7 +70,8 @@ function App({ repo, isPlaceholder }: AppProps) {
         <div
           className={clsx({
             "text-sm font-semibold text-center": !isPlaceholder,
-            "h-2 animate-pulse bg-gray-100 rounded-lg": isPlaceholder,
+            "h-2 animate-pulse bg-stone-100 dark:bg-stone-700 rounded-lg":
+              isPlaceholder,
           })}
         >
           {repo?.description}
