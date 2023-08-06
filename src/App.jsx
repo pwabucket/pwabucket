@@ -17,7 +17,7 @@ export const App = () => {
           : data.items.map((data) => (
               <div
                 key={data.id}
-                className="flex flex-col gap-2"
+                className="flex flex-col gap-1"
                 title={`${capitalCase(data.name)} - ${data.description}`}
               >
                 <img
@@ -28,7 +28,9 @@ export const App = () => {
                 <h1 className="font-bold text-center">
                   {capitalCase(data.name)}
                 </h1>
-                <p className="text-center truncate">{data.description}</p>
+                <p className="text-center truncate text-sm text-stone-600">
+                  {data.description}
+                </p>
               </div>
             ))}
       </div>
