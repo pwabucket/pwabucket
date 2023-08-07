@@ -15,23 +15,29 @@ export const App = () => {
         {isLoading
           ? "Loading..."
           : data.items.map((data) => (
-              <div
+              <a
                 key={data.id}
+                href={data.homepage}
                 className="flex flex-col gap-1"
                 title={`${capitalCase(data.name)} - ${data.description}`}
               >
+                {/* Icon */}
                 <img
-                  src={`${data.homepage}logo.svg`}
+                  src={data.homepage + "pwa-192x192.png"}
                   alt={capitalCase(data.name)}
-                  className="w-full aspect-square"
+                  className="w-full aspect-square rounded-3xl"
                 />
+
+                {/* Name */}
                 <h1 className="font-bold text-center">
                   {capitalCase(data.name)}
                 </h1>
+
+                {/* Description */}
                 <p className="text-center truncate text-sm text-stone-600">
                   {data.description}
                 </p>
-              </div>
+              </a>
             ))}
       </div>
     </div>
