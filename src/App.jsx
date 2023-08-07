@@ -1,3 +1,4 @@
+import ProgressiveImage from "react-progressive-graceful-image";
 import clsx from "clsx";
 import repeat from "repeat-element";
 import { capitalCase } from "change-case";
@@ -35,11 +36,19 @@ export const App = () => {
                 title={`${capitalCase(data.name)} - ${data.description}`}
               >
                 {/* App Icon */}
-                <img
-                  src={data.homepage + "pwa-192x192.png"}
-                  alt={capitalCase(data.name)}
-                  className="w-full aspect-square rounded-3xl mb-3"
-                />
+                <ProgressiveImage src={data.homepage + "pwa-192x192.png"}>
+                  {(src, loading) => {
+                    return loading ? (
+                      <div className="w-full aspect-square rounded-3xl mb-3 bg-neutral-100"></div>
+                    ) : (
+                      <img
+                        src={src}
+                        alt={capitalCase(data.name)}
+                        className="w-full aspect-square rounded-3xl mb-3"
+                      />
+                    );
+                  }}
+                </ProgressiveImage>
 
                 {/* App Name */}
                 <h1 className="font-bold truncate text-center leading-none">
