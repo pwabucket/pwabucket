@@ -1,11 +1,12 @@
-import ProgressiveImage from "react-progressive-graceful-image";
 import clsx from "clsx";
 import repeat from "repeat-element";
 import { capitalCase } from "change-case";
 import { useQuery } from "@tanstack/react-query";
 
 export const App = () => {
-  const { isLoading, data } = useQuery(["listApps"]);
+  const { isLoading, data } = useQuery({
+    queryKey: ["listApps"],
+  });
 
   return (
     <div className="container p-4 mx-auto">
@@ -21,7 +22,7 @@ export const App = () => {
           ? repeat(undefined, 10).map((_, i) => (
               <div key={i} className="flex flex-col gap-1">
                 {/* Placeholder Image */}
-                <div className="w-full aspect-square rounded-3xl mb-3 bg-neutral-100"></div>
+                <div className="w-full mb-3 aspect-square rounded-3xl bg-neutral-100"></div>
                 {/* Placeholder Title */}
                 <div className="w-full h-3 bg-neutral-100"></div>
                 {/* Placeholder Description */}
@@ -36,27 +37,19 @@ export const App = () => {
                 title={`${capitalCase(data.name)} - ${data.description}`}
               >
                 {/* App Icon */}
-                <ProgressiveImage src={data.homepage + "pwa-192x192.png"}>
-                  {(src, loading) => {
-                    return loading ? (
-                      <div className="w-full aspect-square rounded-3xl mb-3 bg-neutral-100"></div>
-                    ) : (
-                      <img
-                        src={src}
-                        alt={capitalCase(data.name)}
-                        className="w-full aspect-square rounded-3xl mb-3"
-                      />
-                    );
-                  }}
-                </ProgressiveImage>
+                <img
+                  src={data.homepage + "pwa-192x192.png"}
+                  alt={capitalCase(data.name)}
+                  className="w-full mb-3 aspect-square rounded-3xl"
+                />
 
                 {/* App Name */}
-                <h1 className="font-bold truncate text-center leading-none">
+                <h1 className="font-bold leading-none text-center truncate">
                   {capitalCase(data.name)}
                 </h1>
 
                 {/* App Description */}
-                <p className="text-center truncate text-sm leading-none text-stone-600">
+                <p className="text-sm leading-none text-center truncate text-stone-600">
                   {data.description}
                 </p>
               </a>
