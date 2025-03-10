@@ -19,16 +19,18 @@ export default memo(function AppDetailHeader({ app }) {
         <p className="text-stone-600 dark:text-stone-400">{description}</p>
 
         {/* Install */}
-        <div className="flex py-1">
-          <PrimaryButton
-            as="a"
-            target="_blank"
-            href={app.homepage}
-            className="rounded-full px-4 py-1 flex gap-2 items-center"
-          >
-            <HiOutlineArrowDownCircle className="size-5" /> Install
-          </PrimaryButton>
-        </div>
+        {app.name !== import.meta.env.VITE_APP_ID ? (
+          <div className="flex py-1">
+            <PrimaryButton
+              as="a"
+              target="_blank"
+              href={app.homepage}
+              className="rounded-full px-4 py-1 flex gap-2 items-center"
+            >
+              <HiOutlineArrowDownCircle className="size-5" /> Install
+            </PrimaryButton>
+          </div>
+        ) : null}
       </div>
     </div>
   );
