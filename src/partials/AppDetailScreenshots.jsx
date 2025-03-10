@@ -25,7 +25,9 @@ export default memo(function AppDetailScreenshots({ app }) {
           key={i}
           src={app.homepage + screenshot.src}
           alt={name}
-          className="h-52 rounded-2xl"
+          width={screenshot.sizes.split("x")[0]}
+          height={screenshot.sizes.split("x")[1]}
+          className="h-52 rounded-2xl bg-stone-100 dark:bg-stone-800"
         />
       ))}
     </AppScreenshotContainer>
