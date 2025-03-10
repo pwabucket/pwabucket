@@ -1,4 +1,4 @@
-import { HiOutlineArrowDownCircle } from "react-icons/hi2";
+import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import { PrimaryButton } from "@/components/Button";
 import { memo } from "react";
 
@@ -18,7 +18,7 @@ export default memo(function AppDetailHeader({ app }) {
         {/* App Description */}
         <p className="text-stone-600 dark:text-stone-400">{description}</p>
 
-        {/* Install */}
+        {/* Open */}
         {app.name !== import.meta.env.VITE_APP_ID ? (
           <div className="flex py-1">
             <PrimaryButton
@@ -27,10 +27,14 @@ export default memo(function AppDetailHeader({ app }) {
               href={app.homepage}
               className="rounded-full px-4 py-1 flex gap-2 items-center"
             >
-              <HiOutlineArrowDownCircle className="size-5" /> Install
+              <HiOutlineArrowTopRightOnSquare className="size-5" /> Open
             </PrimaryButton>
           </div>
-        ) : null}
+        ) : (
+          <p className="text-stone-600 dark:text-stone-400 text-sm">
+            Currently Viewing App
+          </p>
+        )}
       </div>
     </div>
   );
