@@ -14,6 +14,11 @@ export const queryClient = new QueryClient({
        * Select the "data" property
        */
       select: ({ data }) => data,
+
+      /** Disable Refetch */
+      refetchInterval: false,
+      refetchOnMount: false,
+      refetchOnWindowFocus: false,
     },
   },
 });

@@ -1,0 +1,30 @@
+@import "@fontsource/quicksand/300";
+@import "@fontsource/quicksand/400";
+@import "@fontsource/quicksand/500";
+@import "@fontsource/quicksand/700";
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: Quicksand, ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before {
+    @apply [&::-webkit-scrollbar]:w-2
+      [&::-webkit-scrollbar]:h-2
+      [&::-webkit-scrollbar-track]:bg-gray-100
+      [&::-webkit-scrollbar-thumb]:bg-gray-300
+      dark:[&::-webkit-scrollbar-track]:bg-stone-700
+      dark:[&::-webkit-scrollbar-thumb]:bg-stone-500;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

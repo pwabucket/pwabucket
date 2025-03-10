@@ -1,60 +1,13 @@
-import clsx from "clsx";
-import repeat from "repeat-element";
-import { capitalCase } from "change-case";
-import { useQuery } from "@tanstack/react-query";
+import { Route, Routes } from "react-router";
 
-export const App = () => {
-  const { isLoading, data } = useQuery({
-    queryKey: ["listApps"],
-  });
+import AppDetails from "./pages/AppDetails";
+import Home from "./pages/Home";
 
+export default function App() {
   return (
-    <div className="container p-4 mx-auto">
-      <div
-        className={clsx(
-          "grid gap-3",
-          "[--app-grid-size:theme(spacing.24)]",
-          "md:[--app-grid-size:theme(spacing.28)]",
-          "grid-cols-[repeat(auto-fill,_minmax(var(--app-grid-size),_1fr))]"
-        )}
-      >
-        {isLoading
-          ? repeat(undefined, 10).map((_, i) => (
-              <div key={i} className="flex flex-col gap-1">
-                {/* Placeholder Image */}
-                <div className="w-full mb-3 aspect-square rounded-3xl bg-neutral-100"></div>
-                {/* Placeholder Title */}
-                <div className="w-full h-3 bg-neutral-100"></div>
-                {/* Placeholder Description */}
-                <div className="w-full h-2 bg-neutral-100"></div>
-              </div>
-            ))
-          : data.items.map((data) => (
-              <a
-                key={data.id}
-                href={data.homepage}
-                className="flex flex-col gap-1"
-                title={`${capitalCase(data.name)} - ${data.description}`}
-              >
-                {/* App Icon */}
-                <img
-                  src={data.homepage + "pwa-192x192.png"}
-                  alt={capitalCase(data.name)}
-                  className="w-full mb-3 aspect-square rounded-3xl"
-                />
-
-                {/* App Name */}
-                <h1 className="font-bold leading-none text-center truncate">
-                  {capitalCase(data.name)}
-                </h1>
-
-                {/* App Description */}
-                <p className="text-sm leading-none text-center truncate text-stone-600">
-                  {data.description}
-                </p>
-              </a>
-            ))}
-      </div>
-    </div>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="apps/:id" element={<AppDetails />} />
+    </Routes>
   );
-};
+}
