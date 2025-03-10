@@ -25,6 +25,10 @@ export function HeaderButton({
 export function HeaderReturnButton(props) {
   const navigateBack = useNavigateBack();
   return (
-    <HeaderButton {...props} onClick={navigateBack} icon={HiOutlineArrowLeft} />
+    <HeaderButton
+      {...props}
+      onClick={() => navigateBack()}
+      icon={HiOutlineArrowLeft}
+    />
   );
 }
