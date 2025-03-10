@@ -9,4 +9,4 @@ Features:
 
 ## Installing an App
 
-Open the App by clicking the Install button, you will be prompted to install once it loads..
+You will be prompted to install the app once it loads, prompt will appear as a popup (Mobile) or around the address bar (Desktop).
