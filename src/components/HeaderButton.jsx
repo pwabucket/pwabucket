@@ -1,6 +1,6 @@
+import useNavigateBack from "@/hooks/useNavigateBack";
 import { HiOutlineArrowLeft } from "react-icons/hi2";
 import { cn } from "@/lib/utils";
-import { useNavigate } from "react-router";
 
 export function HeaderButton({
   as: Component = "button",
@@ -23,13 +23,8 @@ export function HeaderButton({
 }
 
 export function HeaderReturnButton(props) {
-  const navigate = useNavigate();
-
+  const navigateBack = useNavigateBack();
   return (
-    <HeaderButton
-      {...props}
-      onClick={() => navigate(-1)}
-      icon={HiOutlineArrowLeft}
-    />
+    <HeaderButton {...props} onClick={navigateBack} icon={HiOutlineArrowLeft} />
   );
 }
