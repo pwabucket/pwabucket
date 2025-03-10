@@ -1,14 +1,21 @@
 import { useCallback } from "react";
-import { useLocation } from "react-router";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 export default function useNavigateBack() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const navigateBack = useCallback(() => {
-    return navigate(location.key !== "default" ? -1 : "/");
-  }, [location, navigate]);
+  const navigateBack = useCallback(
+    /**
+     *
+     * @param {import("react-router").NavigateOptions} options
+     * @returns
+     */
+    (options) => {
+      return navigate(location.key !== "default" ? -1 : "/", options);
+    },
+    [location, navigate]
+  );
 
   return navigateBack;
 }
