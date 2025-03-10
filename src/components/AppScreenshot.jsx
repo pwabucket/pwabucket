@@ -6,7 +6,7 @@ export const AppScreenshot = memo(function (props) {
     <img
       {...props}
       className={cn(
-        "basis-0 rounded-2xl h-52 bg-stone-100 dark:bg-stone-800",
+        "basis-0 cursor-pointer rounded-2xl h-52 bg-stone-100 dark:bg-stone-800",
         props.className
       )}
     />

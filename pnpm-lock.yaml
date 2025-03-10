@@ -53,6 +53,9 @@ importers:
       workbox-window:
         specifier: ^7.3.0
         version: 7.3.0
+      yet-another-react-lightbox:
+        specifier: ^3.21.7
+        version: 3.21.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
     devDependencies:
       '@tailwindcss/vite':
         specifier: ^4.0.12
@@ -3254,6 +3257,13 @@ packages:
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
+
+  yet-another-react-lightbox@3.21.7:
+    resolution: {integrity: sha512-dcdokNuCIl92f0Vl+uzeKULnQhztIGpoZFUMvtVNUPmtwsQWpqWufeieDPeg9JtFyVCcbj4vYw3V00DS0QNoWA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
 
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
@@ -6893,6 +6903,11 @@ snapshots:
   wrappy@1.0.2: {}
 
   yallist@3.1.1: {}
+
+  yet-another-react-lightbox@3.21.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   yocto-queue@0.1.0: {}
 
