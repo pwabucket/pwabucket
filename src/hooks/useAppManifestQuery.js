@@ -1,18 +1,12 @@
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
 
-export default function useAppManifestQuery(repo) {
+export default function useAppManifestQuery(repo, homepage) {
   return useQuery({
-    queryKey: ["manifest", repo],
+    queryKey: ["manifest", repo, homepage],
     queryFn: () =>
-      axios
-        .get(
-          `https://${
-            import.meta.env.VITE_APP_ORG
-          }.github.io/${repo}/manifest.webmanifest`
-        )
-        .then((res) => {
-          return { data: res.data };
-        }),
+      axios.get(new URL("manifest.webmanifest", homepage).href).then((res) => {
+        return { data: res.data };
+      }),
   });
 }

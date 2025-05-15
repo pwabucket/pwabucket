@@ -4,7 +4,7 @@ import { memo } from "react";
 
 export default memo(function GridApp({ app }) {
   const [name, description] = app.description.split(" • ");
-  const image = app.homepage + "pwa-192x192.png";
+  const image = new URL("pwa-192x192.png", app.homepage).href;
 
   return (
     <Link

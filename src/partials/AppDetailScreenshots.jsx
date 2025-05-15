@@ -17,7 +17,10 @@ import { useNavigate } from "react-router";
 
 export default memo(function AppDetailScreenshots({ app }) {
   const [name] = app.description.split(" • ");
-  const { isPending, data: manifest } = useAppManifestQuery(app.name);
+  const { isPending, data: manifest } = useAppManifestQuery(
+    app.name,
+    app.homepage
+  );
   const location = useLocation();
   const navigate = useNavigate();
   const slideIndex = location.state?.["__slideIndex"];
@@ -37,7 +40,7 @@ export default memo(function AppDetailScreenshots({ app }) {
   const slides = useMemo(
     () =>
       manifest?.screenshots?.map((screenshot) => ({
-        src: app.homepage + screenshot.src,
+        src: new URL(screenshot.src, app.homepage).href,
         width: screenshot.sizes.split("x")[0],
         height: screenshot.sizes.split("x")[1],
         alt: name,

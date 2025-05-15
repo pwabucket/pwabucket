@@ -4,7 +4,7 @@ import { memo } from "react";
 
 export default memo(function AppDetailHeader({ app }) {
   const [name, description] = app.description.split(" • ");
-  const image = app.homepage + "maskable-icon-512x512.png";
+  const image = new URL("maskable-icon-512x512.png", app.homepage).href;
 
   return (
     <div className="flex gap-2">
