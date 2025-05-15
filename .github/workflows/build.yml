@@ -33,8 +33,16 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Get GitHub Pages URL
+        id: pages_url
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          url=$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '.html_url')
+          echo "homepage_url=$url" >> $GITHUB_OUTPUT
+
       - name: Build
-        run: pnpm run build --base="${{ vars.BASE_URL }}"
+        run: pnpm run build --base="${{ steps.pages_url.outputs.homepage_url }}"
 
       - name: Setup 404 page
         run: cp dist/index.html dist/404.html
