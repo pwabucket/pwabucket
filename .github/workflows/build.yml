@@ -2,9 +2,8 @@ name: "Build and Deploy"
 
 on:
   push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+    tags:
+      - v*.*.*
 
 permissions:
   pages: write
