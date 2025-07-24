@@ -9,14 +9,20 @@ export default function Home() {
   const { isPending, data } = useAppQuery();
 
   return (
-    <AppLayout>
-      <GridAppContainer>
-        {isPending
-          ? repeatComponent(<GridAppPlaceholder />, 10)
-          : data.repositories.map((data) => (
+    <AppLayout className={"gap-2"}>
+      {isPending ? (
+        <GridAppContainer>
+          {repeatComponent(<GridAppPlaceholder />, 10)}
+        </GridAppContainer>
+      ) : (
+        <>
+          <GridAppContainer>
+            {data.repositories.map((data) => (
               <GridApp key={data.repository.id} app={data} />
             ))}
-      </GridAppContainer>
+          </GridAppContainer>
+        </>
+      )}
     </AppLayout>
   );
 }
