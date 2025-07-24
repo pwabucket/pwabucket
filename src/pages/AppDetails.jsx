@@ -14,7 +14,10 @@ export default function AppDetails() {
   const { isPending, isError, data } = useAppQuery();
 
   const app = useMemo(
-    () => (data ? data.items.find((item) => item.id === Number(id)) : null),
+    () =>
+      data
+        ? data.repositories.find((item) => item.repository.id === Number(id))
+        : null,
     [data]
   );
 

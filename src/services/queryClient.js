@@ -10,11 +10,6 @@ export const queryClient = new QueryClient({
        */
       queryFn: ({ queryKey }) => api[queryKey[0]](...queryKey.slice(1)),
 
-      /**
-       * Select the "data" property
-       */
-      select: ({ data }) => data,
-
       /** Disable Refetch */
       refetchInterval: false,
       refetchOnMount: false,

@@ -3,7 +3,6 @@ import "yet-another-react-lightbox/styles.css";
 import AppScreenshotContainer from "@/components/AppScreenshotContainer";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import useAppManifestQuery from "@/hooks/useAppManifestQuery";
 import {
   AppScreenshot,
   AppScreenshotPlaceholder,
@@ -15,12 +14,22 @@ import { useLocation } from "react-router";
 import { useMemo } from "react";
 import { useNavigate } from "react-router";
 
+const ScreenshotsPlaceholder = () => (
+  <AppScreenshotContainer>
+    {repeatComponent(
+      <>
+        <AppScreenshotPlaceholder width={320} height={480} />
+        <AppScreenshotPlaceholder width={1280} height={720} />
+      </>,
+      2
+    )}
+  </AppScreenshotContainer>
+);
+
 export default memo(function AppDetailScreenshots({ app }) {
-  const [name] = app.description.split(" • ");
-  const { isPending, data: manifest } = useAppManifestQuery(
-    app.name,
-    app.homepage
-  );
+  const { repository, manifest } = app;
+  const { name, description } = manifest;
+
   const location = useLocation();
   const navigate = useNavigate();
   const slideIndex = location.state?.["__slideIndex"];
@@ -40,25 +49,15 @@ export default memo(function AppDetailScreenshots({ app }) {
   const slides = useMemo(
     () =>
       manifest?.screenshots?.map((screenshot) => ({
-        src: new URL(screenshot.src, app.homepage).href,
+        src: new URL(screenshot.src, repository.homepage).href,
         width: screenshot.sizes.split("x")[0],
         height: screenshot.sizes.split("x")[1],
         alt: name,
       })),
-    [app.homepage, name, manifest]
+    [repository.homepage, name, manifest]
   );
 
-  return isPending ? (
-    <AppScreenshotContainer>
-      {repeatComponent(
-        <>
-          <AppScreenshotPlaceholder width={320} height={480} />
-          <AppScreenshotPlaceholder width={1280} height={720} />
-        </>,
-        2
-      )}
-    </AppScreenshotContainer>
-  ) : slides ? (
+  return slides ? (
     <>
       <AppScreenshotContainer>
         {slides?.map((slide, i) => (

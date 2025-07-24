@@ -11,8 +11,6 @@ export default function useAppMarkdownQuery(repo) {
             import.meta.env.VITE_APP_ORG
           }/${repo}/main/README.md`
         )
-        .then((res) => {
-          return { data: res.data };
-        }),
+        .then((res) => res.data),
   });
 }

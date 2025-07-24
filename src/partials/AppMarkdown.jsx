@@ -5,7 +5,9 @@ import useAppMarkdownQuery from "@/hooks/useAppMarkdownQuery";
 import { cn } from "@/lib/utils";
 
 export default function AppMarkdown({ app }) {
-  const { isPending, isError, data } = useAppMarkdownQuery(app.name);
+  const { repository } = app;
+
+  const { isPending, isError, data } = useAppMarkdownQuery(repository.name);
 
   return isPending ? (
     <Spinner />

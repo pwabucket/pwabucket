@@ -13,7 +13,9 @@ export default function Home() {
       <GridAppContainer>
         {isPending
           ? repeatComponent(<GridAppPlaceholder />, 10)
-          : data.items.map((data) => <GridApp key={data.id} app={data} />)}
+          : data.repositories.map((data) => (
+              <GridApp key={data.repository.id} app={data} />
+            ))}
       </GridAppContainer>
     </AppLayout>
   );

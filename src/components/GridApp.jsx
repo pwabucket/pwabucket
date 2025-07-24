@@ -3,12 +3,13 @@ import { cn } from "@/lib/utils";
 import { memo } from "react";
 
 export default memo(function GridApp({ app }) {
-  const [name, description] = app.description.split(" • ");
-  const image = new URL("pwa-192x192.png", app.homepage).href;
+  const { repository, manifest } = app;
+  const { name, description } = manifest;
+  const image = new URL("pwa-192x192.png", repository.homepage).href;
 
   return (
     <Link
-      to={`/apps/${app.id}`}
+      to={`/apps/${repository.id}`}
       className="flex flex-col gap-1"
       title={`${name} - ${description}`}
     >
