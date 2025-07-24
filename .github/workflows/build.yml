@@ -1,6 +1,7 @@
 name: "Build and Deploy"
 
 on:
+  workflow_dispatch: # Allow manual triggering
   push:
     tags:
       - v*.*.*
@@ -31,6 +32,22 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Collect PWA data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ORGANIZATION: pwabucket
+        run: node scripts/generate-pwa-data.js
+
+      - name: Commit and push changes
+        run: ./scripts/commit-and-push.sh
+
+      - name: Upload PWA data as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pwa-data
+          path: public/data/pwa-data.json
+          retention-days: 30
 
       - name: Get GitHub Pages URL
         id: pages_url
