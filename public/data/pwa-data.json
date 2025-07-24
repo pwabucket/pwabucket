@@ -1,41 +1,38 @@
 {
-  "generatedAt": "2025-07-24T05:11:27.239Z",
+  "generatedAt": "2025-07-24T05:14:08.467Z",
   "organization": "pwabucket",
   "totalRepositories": 4,
   "repositories": [
     {
       "repository": {
-        "id": 1007180361,
-        "name": "pwa-keza",
-        "fullName": "pwabucket/pwa-keza",
-        "htmlUrl": "https://github.com/pwabucket/pwa-keza",
-        "description": "Keza • Multi-Chain Wallets Generator",
+        "id": 675343554,
+        "name": "pwabucket",
+        "fullName": "pwabucket/pwabucket",
+        "htmlUrl": "https://github.com/pwabucket/pwabucket",
+        "description": "PWABucket • App Store",
         "stargazersCount": 0,
         "forksCount": 0,
         "language": "JavaScript",
         "topics": [
-          "evm",
-          "pwa",
-          "solana",
-          "ton"
+          "pwa"
         ],
-        "createdAt": "2025-06-23T15:27:53Z",
-        "updatedAt": "2025-06-24T08:45:23Z",
-        "pushedAt": "2025-06-24T08:45:30Z",
-        "homepage": "https://keza.pwabucket.com/",
+        "createdAt": "2023-08-06T15:58:19Z",
+        "updatedAt": "2025-07-24T05:13:56Z",
+        "pushedAt": "2025-07-24T05:13:52Z",
+        "homepage": "https://pwabucket.com/",
         "hasPages": true,
-        "defaultBranch": "main"
+        "defaultBranch": "dev"
       },
       "manifest": {
-        "name": "Keza",
-        "short_name": "Keza",
-        "description": "Multi-chain Wallet Generator",
-        "start_url": "https://keza.pwabucket.com/",
+        "name": "PWABucket",
+        "short_name": "PWABucket",
+        "start_url": "https://pwabucket.com/",
         "display": "standalone",
-        "background_color": "#262626",
-        "theme_color": "#262626",
+        "background_color": "#ffffff",
         "lang": "en",
-        "scope": "https://keza.pwabucket.com/",
+        "scope": "https://pwabucket.com/",
+        "description": "A Progressive Web App Store",
+        "theme_color": "#ffffff",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -71,14 +68,21 @@
             "type": "image/jpg"
           },
           {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
+            "src": "screenshot-desktop-1.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpg",
+            "form_factor": "wide"
+          },
+          {
+            "src": "screenshot-desktop-2.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpg",
+            "form_factor": "wide"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-07-24T05:11:27.967Z"
+          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-07-24T05:14:08.595Z"
         }
       },
       "errors": []
@@ -155,41 +159,44 @@
         ],
         "_meta": {
           "manifestUrl": "https://ai-earn.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-07-24T05:11:27.967Z"
+          "fetchedAt": "2025-07-24T05:14:08.638Z"
         }
       },
       "errors": []
     },
     {
       "repository": {
-        "id": 675343554,
-        "name": "pwabucket",
-        "fullName": "pwabucket/pwabucket",
-        "htmlUrl": "https://github.com/pwabucket/pwabucket",
-        "description": "PWABucket • App Store",
+        "id": 1007180361,
+        "name": "pwa-keza",
+        "fullName": "pwabucket/pwa-keza",
+        "htmlUrl": "https://github.com/pwabucket/pwa-keza",
+        "description": "Keza • Multi-Chain Wallets Generator",
         "stargazersCount": 0,
         "forksCount": 0,
         "language": "JavaScript",
         "topics": [
-          "pwa"
+          "evm",
+          "pwa",
+          "solana",
+          "ton"
         ],
-        "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2025-06-24T03:58:13Z",
-        "pushedAt": "2025-06-24T03:58:09Z",
-        "homepage": "https://pwabucket.com/",
+        "createdAt": "2025-06-23T15:27:53Z",
+        "updatedAt": "2025-06-24T08:45:23Z",
+        "pushedAt": "2025-06-24T08:45:30Z",
+        "homepage": "https://keza.pwabucket.com/",
         "hasPages": true,
-        "defaultBranch": "dev"
+        "defaultBranch": "main"
       },
       "manifest": {
-        "name": "PWABucket",
-        "short_name": "PWABucket",
-        "start_url": "https://pwabucket.com/",
+        "name": "Keza",
+        "short_name": "Keza",
+        "description": "Multi-chain Wallet Generator",
+        "start_url": "https://keza.pwabucket.com/",
         "display": "standalone",
-        "background_color": "#ffffff",
+        "background_color": "#262626",
+        "theme_color": "#262626",
         "lang": "en",
-        "scope": "https://pwabucket.com/",
-        "description": "A Progressive Web App Store",
-        "theme_color": "#ffffff",
+        "scope": "https://keza.pwabucket.com/",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -225,21 +232,14 @@
             "type": "image/jpg"
           },
           {
-            "src": "screenshot-desktop-1.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
-          },
-          {
-            "src": "screenshot-desktop-2.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-07-24T05:11:28.152Z"
+          "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-07-24T05:14:08.665Z"
         }
       },
       "errors": []
@@ -340,7 +340,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-07-24T05:11:28.152Z"
+          "fetchedAt": "2025-07-24T05:14:08.760Z"
         }
       },
       "errors": []
