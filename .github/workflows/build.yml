@@ -1,9 +1,6 @@
 name: "Build and Deploy"
 
 on:
-  schedule:
-    # Run every day at 6:00 AM UTC
-    - cron: "0 6 * * *"
   workflow_dispatch: # Allow manual triggering
   push:
     tags:
@@ -41,16 +38,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ORGANIZATION: pwabucket
         run: node scripts/generate-pwa-data.js
-
-      - name: Commit and push changes
-        run: ./scripts/commit-and-push.sh
-
-      - name: Upload PWA data as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: pwa-data
-          path: public/data/pwa-data.json
-          retention-days: 30
 
       - name: Get GitHub Pages URL
         id: pages_url
