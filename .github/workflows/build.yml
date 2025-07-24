@@ -1,6 +1,9 @@
 name: "Build and Deploy"
 
 on:
+  schedule:
+    # Run every day at 6:00 AM UTC
+    - cron: "0 6 * * *"
   workflow_dispatch: # Allow manual triggering
   push:
     tags:
