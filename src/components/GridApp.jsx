@@ -9,7 +9,7 @@ export default memo(function GridApp({ app }) {
 
   return (
     <Link
-      to={`/apps/${repository.id}`}
+      to={`/apps/${repository.name.replace(/^pwa-/, "")}`}
       className="flex flex-col gap-1"
       title={`${name} - ${description}`}
     >

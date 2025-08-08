@@ -16,7 +16,12 @@ export default function AppDetails() {
   const app = useMemo(
     () =>
       data
-        ? data.repositories.find((item) => item.repository.id === Number(id))
+        ? data.repositories.find(
+            (item) =>
+              item.repository.name === id ||
+              item.repository.name.replace(/^pwa-/, "") === id ||
+              item.repository.id === Number(id)
+          )
         : null,
     [data]
   );
