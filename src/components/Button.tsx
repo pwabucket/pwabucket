@@ -1,14 +1,16 @@
+import type { DynamicComponent } from "@/types/types";
 import { cn } from "@/lib/utils";
 import { memo } from "react";
 
-export const Button = memo(function ({ as: Component = "button", ...props }) {
+export const Button = memo(function ({ as, ...props }) {
+  const Component = as || "button";
   return (
     <Component
       {...props}
       className={cn("p-2 rounded-xl", "disabled:opacity-80", props.className)}
     />
   );
-});
+}) as DynamicComponent<"button">;
 
 export const PrimaryButton = memo(function (props) {
   return (
@@ -17,7 +19,7 @@ export const PrimaryButton = memo(function (props) {
       className={cn("bg-purple-500 text-white", props.className)}
     />
   );
-});
+}) as DynamicComponent<"button">;
 
 export const SecondaryButton = memo(function (props) {
   return (
@@ -30,4 +32,4 @@ export const SecondaryButton = memo(function (props) {
       )}
     />
   );
-});
+}) as DynamicComponent<"button">;

@@ -3,6 +3,7 @@ import "yet-another-react-lightbox/styles.css";
 import AppScreenshotContainer from "@/components/AppScreenshotContainer";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import type { AppItem } from "@/types/app";
 import {
   AppScreenshot,
   AppScreenshotPlaceholder,
@@ -14,7 +15,7 @@ import { useLocation } from "react-router";
 import { useMemo } from "react";
 import { useNavigate } from "react-router";
 
-const ScreenshotsPlaceholder = () => (
+export const ScreenshotsPlaceholder = () => (
   <AppScreenshotContainer>
     {repeatComponent(
       <>
@@ -26,17 +27,17 @@ const ScreenshotsPlaceholder = () => (
   </AppScreenshotContainer>
 );
 
-export default memo(function AppDetailScreenshots({ app }) {
+export default memo(function AppDetailScreenshots({ app }: { app: AppItem }) {
   const { repository, manifest } = app;
-  const { name, description } = manifest;
+  const { name } = manifest!;
 
   const location = useLocation();
   const navigate = useNavigate();
   const slideIndex = location.state?.["__slideIndex"];
 
   const goToSlide = useCallback(
-    (index) => {
-      navigate(null, {
+    (index: number) => {
+      navigate(location, {
         state: {
           ...location.state,
           __slideIndex: index,
@@ -49,9 +50,9 @@ export default memo(function AppDetailScreenshots({ app }) {
   const slides = useMemo(
     () =>
       manifest?.screenshots?.map((screenshot) => ({
-        src: new URL(screenshot.src, repository.homepage).href,
-        width: screenshot.sizes.split("x")[0],
-        height: screenshot.sizes.split("x")[1],
+        src: new URL(screenshot.src, repository.homepage!).href,
+        width: Number(screenshot.sizes!.split("x")[0]),
+        height: Number(screenshot.sizes!.split("x")[1]),
         alt: name,
       })),
     [repository.homepage, name, manifest]
@@ -67,7 +68,7 @@ export default memo(function AppDetailScreenshots({ app }) {
       <Lightbox
         index={slideIndex}
         open={typeof slideIndex !== "undefined"}
-        close={() => navigate(-1, { replace: true })}
+        close={() => navigate(-1)}
         slides={slides}
         plugins={[Zoom]}
       />

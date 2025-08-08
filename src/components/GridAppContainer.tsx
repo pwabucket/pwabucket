@@ -1,6 +1,10 @@
 import { cn } from "@/lib/utils";
 
-export default function GridAppContainer({ children }) {
+export default function GridAppContainer({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div
       className={cn(

@@ -1,7 +1,9 @@
 import { cn } from "@/lib/utils";
 import { memo } from "react";
 
-export const AppScreenshot = memo(function (props) {
+export const AppScreenshot = memo(function (
+  props: React.ComponentProps<"img">
+) {
   return (
     <img
       {...props}
@@ -17,7 +19,7 @@ export const AppScreenshotPlaceholder = memo(function ({
   width = 200,
   height = 200,
   ...props
-}) {
+}: React.ComponentProps<typeof AppScreenshot>) {
   const src =
     "data:image/svg+xml," +
     encodeURIComponent(`

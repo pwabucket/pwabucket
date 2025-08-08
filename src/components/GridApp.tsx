@@ -1,11 +1,12 @@
+import type { AppItem } from "@/types/app";
 import { Link } from "react-router";
 import { cn } from "@/lib/utils";
 import { memo } from "react";
 
-export default memo(function GridApp({ app }) {
+export default memo(function GridApp({ app }: { app: AppItem }) {
   const { repository, manifest } = app;
-  const { name, description } = manifest;
-  const image = new URL("pwa-192x192.png", repository.homepage).href;
+  const { name, description } = manifest!;
+  const image = new URL("pwa-192x192.png", repository.homepage!).href;
 
   return (
     <Link

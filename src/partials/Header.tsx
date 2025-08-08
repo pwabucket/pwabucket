@@ -1,7 +1,15 @@
 import AppIcon from "@/assets/images/icon.svg";
 import { cn } from "@/lib/utils";
 
-export default function Header({ leftContent, middleContent, rightContent }) {
+export default function Header({
+  leftContent,
+  middleContent,
+  rightContent,
+}: {
+  leftContent?: React.ReactNode;
+  middleContent?: React.ReactNode;
+  rightContent?: React.ReactNode;
+}) {
   return (
     <div
       className={cn(

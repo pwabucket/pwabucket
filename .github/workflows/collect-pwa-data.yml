@@ -38,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ORGANIZATION: pwabucket
-        run: node scripts/generate-pwa-data.js
+        run: pnpm generate-data
 
       - name: Commit and push changes
         run: ./scripts/commit-and-push.sh

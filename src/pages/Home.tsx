@@ -17,8 +17,8 @@ export default function Home() {
       ) : (
         <>
           <GridAppContainer>
-            {data.repositories.map((data) => (
-              <GridApp key={data.repository.id} app={data} />
+            {data!.repositories.map((app) => (
+              <GridApp key={app.repository.id} app={app} />
             ))}
           </GridAppContainer>
         </>

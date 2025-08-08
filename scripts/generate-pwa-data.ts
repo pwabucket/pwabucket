@@ -7,6 +7,8 @@ import { Octokit } from "@octokit/rest";
 import { existsSync, mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
 
+import type { AppItem, AppsCollectionResult } from "../src/types/app";
+
 const config = {
   organization: process.env.ORGANIZATION,
   githubToken: process.env.GITHUB_TOKEN,
@@ -85,9 +87,9 @@ async function collectPWAData() {
       `📦 Found ${searchResult.data.items.length} repositories with 'pwa' topic`
     );
 
-    const pwaData = {
+    const pwaData: AppsCollectionResult = {
       generatedAt: new Date().toISOString(),
-      organization: config.organization,
+      organization: config.organization as string,
       totalRepositories: searchResult.data.items.length,
       repositories: [],
       _meta: {
@@ -103,7 +105,7 @@ async function collectPWAData() {
       searchResult.data.items.map(async (repo) => {
         console.log(`\n📋 Processing: ${repo.full_name}`);
 
-        const repoData = {
+        const repoData: AppItem = {
           repository: {
             id: repo.id,
             name: repo.name,
@@ -141,7 +143,7 @@ async function collectPWAData() {
             console.log(`  💥 Error fetching live manifest: ${error.message}`);
             repoData.errors.push({
               type: "live_manifest",
-              message: error.message,
+              message: (error as Error).message,
             });
           }
         } else {

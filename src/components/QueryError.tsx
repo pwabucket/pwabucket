@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { memo } from "react";
 
-export default memo(function QueryError(props) {
+export default memo(function QueryError(props: React.ComponentProps<"p">) {
   return (
     <p
       {...props}

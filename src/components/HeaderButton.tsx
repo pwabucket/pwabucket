@@ -1,12 +1,15 @@
 import useNavigateBack from "@/hooks/useNavigateBack";
+import type { DynamicComponent } from "@/types/types";
 import { HiOutlineArrowLeft } from "react-icons/hi2";
 import { cn } from "@/lib/utils";
 
-export function HeaderButton({
-  as: Component = "button",
-  icon: Icon,
-  ...props
-}) {
+export const HeaderButton: DynamicComponent<
+  "button",
+  { icon: React.ElementType }
+> = function ({ as, icon, ...props }) {
+  const Component = as || "button";
+  const Icon = icon;
+
   return (
     <Component
       {...props}
@@ -20,9 +23,11 @@ export function HeaderButton({
       <Icon className="size-6" />
     </Component>
   );
-}
+};
 
-export function HeaderReturnButton(props) {
+export function HeaderReturnButton(
+  props: Omit<React.ComponentProps<typeof HeaderButton>, "onClick" | "icon">
+) {
   const navigateBack = useNavigateBack();
   return (
     <HeaderButton

@@ -7,6 +7,12 @@ export default function AppLayout({
   headerRightContent,
   className,
   children,
+}: {
+  headerLeftContent?: React.ReactNode;
+  headerMiddleContent?: React.ReactNode;
+  headerRightContent?: React.ReactNode;
+  className?: string;
+  children: React.ReactNode;
 }) {
   return (
     <div className="flex flex-col min-h-dvh">

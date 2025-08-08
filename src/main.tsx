@@ -5,12 +5,12 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/services/queryClient.js";
 import { registerSW } from "virtual:pwa-register";
 
-import App from "./App.jsx";
+import App from "./App.tsx";
 
 /** Register Service Worker */
 registerSW({ immediate: true });
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
