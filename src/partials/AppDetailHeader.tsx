@@ -1,16 +1,13 @@
 import type { AppItem } from "@/types/app";
 import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
-import { SiGithub } from "react-icons/si";
 import { PrimaryButton, SecondaryButton } from "@/components/Button";
+import { SiGithub } from "react-icons/si";
 import { memo } from "react";
 
 export default memo(function AppDetailHeader({ app }: { app: AppItem }) {
   const { repository, manifest } = app;
   const { name, description } = manifest!;
-  const image = new URL(
-    "maskable-icon-512x512.png",
-    repository.homepage as string
-  ).href;
+  const image = new URL("pwa-192x192.png", repository.homepage as string).href;
 
   return (
     <div className="flex gap-2">

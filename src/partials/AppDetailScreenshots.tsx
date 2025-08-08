@@ -1,7 +1,6 @@
 import "yet-another-react-lightbox/styles.css";
-
 import AppScreenshotContainer from "@/components/AppScreenshotContainer";
-import Lightbox from "yet-another-react-lightbox";
+import Lightbox, { type SlideImage } from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import type { AppItem } from "@/types/app";
 import {
@@ -12,8 +11,8 @@ import { memo } from "react";
 import { repeatComponent } from "@/lib/utils";
 import { useCallback } from "react";
 import { useLocation } from "react-router";
-import { useMemo } from "react";
 import { useNavigate } from "react-router";
+import useScreenshots from "@/hooks/useScreenshots";
 
 export const ScreenshotsPlaceholder = () => (
   <AppScreenshotContainer>
@@ -27,13 +26,31 @@ export const ScreenshotsPlaceholder = () => (
   </AppScreenshotContainer>
 );
 
-export default memo(function AppDetailScreenshots({ app }: { app: AppItem }) {
-  const { repository, manifest } = app;
-  const { name } = manifest!;
-
+export const ScreenshotsLightbox = ({ slides }: { slides: SlideImage[] }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const slideIndex = location.state?.["__slideIndex"];
+
+  return (
+    <Lightbox
+      index={slideIndex}
+      open={typeof slideIndex !== "undefined"}
+      close={() => navigate(-1)}
+      slides={slides}
+      plugins={[Zoom]}
+    />
+  );
+};
+
+export default memo(function AppDetailScreenshots({
+  app,
+  lightbox = true,
+}: {
+  app: AppItem;
+  lightbox?: boolean;
+}) {
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const goToSlide = useCallback(
     (index: number) => {
@@ -47,16 +64,7 @@ export default memo(function AppDetailScreenshots({ app }: { app: AppItem }) {
     [navigate, location]
   );
 
-  const slides = useMemo(
-    () =>
-      manifest?.screenshots?.map((screenshot) => ({
-        src: new URL(screenshot.src, repository.homepage!).href,
-        width: Number(screenshot.sizes!.split("x")[0]),
-        height: Number(screenshot.sizes!.split("x")[1]),
-        alt: name,
-      })),
-    [repository.homepage, name, manifest]
-  );
+  const slides = useScreenshots(app);
 
   return slides ? (
     <>
@@ -65,13 +73,8 @@ export default memo(function AppDetailScreenshots({ app }: { app: AppItem }) {
           <AppScreenshot key={i} {...slide} onClick={() => goToSlide(i)} />
         ))}
       </AppScreenshotContainer>
-      <Lightbox
-        index={slideIndex}
-        open={typeof slideIndex !== "undefined"}
-        close={() => navigate(-1)}
-        slides={slides}
-        plugins={[Zoom]}
-      />
+
+      {lightbox && <ScreenshotsLightbox slides={slides} />}
     </>
   ) : null;
 });

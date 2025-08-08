@@ -1,9 +1,9 @@
 import AppLayout from "@/layouts/AppLayout";
-import GridApp from "@/components/GridApp";
-import GridAppContainer from "@/components/GridAppContainer";
-import GridAppPlaceholder from "@/components/GridAppPlaceholder";
+import CardAppContainer from "@/components/CardAppContainer";
+import CardAppPlaceholder from "@/components/CardAppPlaceholder";
 import useAppQuery from "@/hooks/useAppQuery";
 import { repeatComponent } from "@/lib/utils";
+import CardApp from "@/components/CardApp";
 
 export default function Home() {
   const { isPending, data } = useAppQuery();
@@ -11,16 +11,16 @@ export default function Home() {
   return (
     <AppLayout className={"gap-2"}>
       {isPending ? (
-        <GridAppContainer>
-          {repeatComponent(<GridAppPlaceholder />, 10)}
-        </GridAppContainer>
+        <CardAppContainer>
+          {repeatComponent(<CardAppPlaceholder />, 4)}
+        </CardAppContainer>
       ) : (
         <>
-          <GridAppContainer>
+          <CardAppContainer>
             {data!.repositories.map((app) => (
-              <GridApp key={app.repository.id} app={app} />
+              <CardApp key={app.repository.id} app={app} />
             ))}
-          </GridAppContainer>
+          </CardAppContainer>
         </>
       )}
     </AppLayout>
