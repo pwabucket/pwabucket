@@ -13,3 +13,34 @@ export function repeatComponent(component: React.ReactNode, times = 1) {
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
+
+export function resizeImageUrl({
+  url,
+  width,
+  height,
+  size,
+}: {
+  url: string;
+  width?: number;
+  height?: number;
+  size?: number;
+}): string {
+  const options: Record<string, string> = {
+    url,
+    output: "webp",
+  };
+
+  if (width) {
+    options["w"] = String(width);
+  }
+  if (height) {
+    options["h"] = String(height);
+  }
+
+  if (size) {
+    options["w"] = String(size);
+    options["h"] = String(size);
+  }
+
+  return `//wsrv.nl/?${new URLSearchParams(options).toString()}`;
+}
