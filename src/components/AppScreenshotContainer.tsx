@@ -1,13 +1,12 @@
+import { cn } from "@/lib/utils";
 import { memo } from "react";
 
-export default memo(function AppScreenshotContainer({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default memo(function AppScreenshotContainer(
+  props: React.ComponentProps<"div">
+) {
   return (
-    <div className="overflow-auto py-2">
-      <div className="flex flex-nowrap gap-2">{children}</div>
+    <div {...props} className={cn("overflow-auto py-2", props.className)}>
+      <div className="flex flex-nowrap gap-2">{props.children}</div>
     </div>
   );
 });
