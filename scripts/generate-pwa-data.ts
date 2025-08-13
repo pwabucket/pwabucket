@@ -3,14 +3,16 @@
 import "dotenv/config";
 
 import axios from "axios";
-import { Octokit, RestEndpointMethodTypes } from "@octokit/rest";
+import { Octokit } from "@octokit/rest";
 import { existsSync, mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
 
-import type { AppItem, AppsCollectionResult } from "../src/types/app";
-
-type RepositoryResult =
-  RestEndpointMethodTypes["search"]["repos"]["response"]["data"]["items"][number];
+import type {
+  AppItem,
+  AppManifest,
+  AppsCollectionResult,
+  RepositoryResult,
+} from "../src/types/app";
 
 const config = {
   organization: process.env.ORGANIZATION,
@@ -38,15 +40,17 @@ async function fetchManifest(repo: RepositoryResult) {
   let baseUrl = repo.topics!.includes("pwa-spot")
     ? `https://raw.githubusercontent.com/${repo["full_name"]}/main`
     : repo.homepage;
+
   if (!baseUrl.startsWith("http")) {
     baseUrl = `https://${baseUrl}`;
   }
+
   baseUrl = baseUrl.replace(/\/$/, "");
 
   const url = `${baseUrl}/${config.manifestPath}`;
 
   try {
-    console.log(`  🌐 Trying: ${url}`);
+    console.log(`🌐 Trying: ${url}`);
     const response = await axios.get(url, {
       timeout: config.timeout,
       validateStatus: (status) => status === 200,
@@ -56,7 +60,7 @@ async function fetchManifest(repo: RepositoryResult) {
     });
 
     if (response.data) {
-      const manifest =
+      const manifest: AppManifest =
         typeof response.data === "string"
           ? JSON.parse(response.data)
           : response.data;
@@ -69,7 +73,7 @@ async function fetchManifest(repo: RepositoryResult) {
       return manifest;
     }
   } catch (error) {
-    console.log(`  ❌ Failed: ${error.message}`);
+    console.log(`❌ Failed: ${error.message}`);
   }
 
   return null;
@@ -134,25 +138,25 @@ async function collectPWAData() {
 
         if (repo.homepage) {
           try {
-            console.log(`  🌍 Searching site for manifest...`);
+            console.log(`🌍 Searching site for manifest...`);
             const manifest = await fetchManifest(repo);
             if (manifest) {
               repoData.manifest = manifest;
               console.log(
-                `  ✅ Found live manifest at: ${manifest._meta.manifestUrl}`
+                `✅ Found manifest at: ${manifest._meta.manifestUrl}`
               );
             } else {
-              console.log(`  ❌ No live manifest found`);
+              console.log(`❌ No manifest found`);
             }
           } catch (error) {
-            console.log(`  💥 Error fetching live manifest: ${error.message}`);
+            console.log(`💥 Error fetching manifest: ${error.message}`);
             repoData.errors.push({
               type: "live_manifest",
               message: (error as Error).message,
             });
           }
         } else {
-          console.log(`  ℹ️  No homepage URL configured`);
+          console.log(`ℹ️  No homepage URL configured`);
         }
 
         pwaData.repositories.push(repoData);
@@ -176,9 +180,9 @@ async function collectPWAData() {
     ).length;
 
     console.log(`\n📊 Summary:`);
-    console.log(`  • Total repositories: ${pwaData.totalRepositories}`);
-    console.log(`  • With manifest: ${withManifest}`);
-    console.log(`  • With errors: ${withErrors}`);
+    console.log(`• Total repositories: ${pwaData.totalRepositories}`);
+    console.log(`• With manifest: ${withManifest}`);
+    console.log(`• With errors: ${withErrors}`);
 
     if (withErrors > 0) {
       console.log(`\n⚠️  Repositories with errors:`);
@@ -186,7 +190,7 @@ async function collectPWAData() {
         .filter((r) => r.errors.length > 0)
         .forEach((r) => {
           console.log(
-            `  • ${r.repository.fullName}: ${r.errors
+            `• ${r.repository.fullName}: ${r.errors
               .map((e) => e.type)
               .join(", ")}`
           );
