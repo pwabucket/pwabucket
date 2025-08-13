@@ -49,7 +49,7 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
         </div>
       </div>
 
-      <AppScreenshotContainer>
+      <AppScreenshotContainer className="rounded-2xl">
         {slides?.map((slide, i) => (
           <AppScreenshot
             key={i}
