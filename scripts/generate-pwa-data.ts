@@ -3,11 +3,14 @@
 import "dotenv/config";
 
 import axios from "axios";
-import { Octokit } from "@octokit/rest";
+import { Octokit, RestEndpointMethodTypes } from "@octokit/rest";
 import { existsSync, mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
 
 import type { AppItem, AppsCollectionResult } from "../src/types/app";
+
+type RepositoryResult =
+  RestEndpointMethodTypes["search"]["repos"]["response"]["data"]["items"][number];
 
 const config = {
   organization: process.env.ORGANIZATION,
@@ -29,10 +32,12 @@ const octokit = new Octokit({
   auth: config.githubToken,
 });
 
-async function fetchManifest(repo) {
+async function fetchManifest(repo: RepositoryResult) {
   if (!repo.homepage) return null;
 
-  let baseUrl = repo.homepage;
+  let baseUrl = repo.topics!.includes("pwa-spot")
+    ? `https://raw.githubusercontent.com/${repo["full_name"]}/main`
+    : repo.homepage;
   if (!baseUrl.startsWith("http")) {
     baseUrl = `https://${baseUrl}`;
   }
@@ -77,14 +82,14 @@ async function collectPWAData() {
     );
 
     const searchResult = await octokit.search.repos({
-      q: `pwa in:topics org:${config.organization}`,
+      q: `pwa OR pwa-spot in:topics org:${config.organization}`,
       sort: "updated",
       order: "desc",
       per_page: 100,
     });
 
     console.log(
-      `📦 Found ${searchResult.data.items.length} repositories with 'pwa' topic`
+      `📦 Found ${searchResult.data.items.length} repositories with 'pwa' or 'pwa-spot' topic`
     );
 
     const pwaData: AppsCollectionResult = {
