@@ -1,7 +1,7 @@
 import type { RestEndpointMethodTypes } from "@octokit/rest";
 import type { WebAppManifest } from "web-app-manifest";
 
-type RepositoryResult =
+export type RepositoryResult =
   RestEndpointMethodTypes["search"]["repos"]["response"]["data"]["items"][number];
 
 export type RepositoryItem = {
@@ -22,9 +22,16 @@ export type RepositoryItem = {
   defaultBranch: RepositoryResult["default_branch"];
 };
 
+export type AppManifest = WebAppManifest & {
+  _meta: {
+    manifestUrl: string;
+    fetchedAt: string;
+  };
+};
+
 export type AppItem = {
   repository: RepositoryItem;
-  manifest: WebAppManifest | null;
+  manifest: AppManifest | null;
   errors: { type: string; message: string }[];
 };
 
