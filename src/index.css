@@ -12,15 +12,17 @@
 }
 
 @layer base {
-  *,
-  ::after,
-  ::before {
-    @apply [&::-webkit-scrollbar]:w-2
-      [&::-webkit-scrollbar]:h-2
-      [&::-webkit-scrollbar-track]:bg-gray-100
-      [&::-webkit-scrollbar-thumb]:bg-gray-300
-      dark:[&::-webkit-scrollbar-track]:bg-stone-700
-      dark:[&::-webkit-scrollbar-thumb]:bg-stone-500;
+  @media (hover: hover) and (pointer: fine) {
+    *,
+    ::after,
+    ::before {
+      @apply [&::-webkit-scrollbar]:w-2
+        [&::-webkit-scrollbar]:h-2
+        [&::-webkit-scrollbar-track]:bg-gray-100
+        [&::-webkit-scrollbar-thumb]:bg-gray-300
+        dark:[&::-webkit-scrollbar-track]:bg-stone-700
+        dark:[&::-webkit-scrollbar-thumb]:bg-stone-500;
+    }
   }
 
   button:not(:disabled),
