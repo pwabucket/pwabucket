@@ -9,6 +9,8 @@ export default memo(function AppDetailHeader({ app }: { app: AppItem }) {
   const { repository, manifest } = app;
   const { name, description } = manifest!;
   const image = new URL("pwa-192x192.png", manifest!._meta.manifestUrl).href;
+  const isCurrentApp = repository.name === import.meta.env.VITE_APP_ID;
+  const isSpotApp = repository.topics?.includes("pwa-spot");
 
   return (
     <div className="flex gap-2">
@@ -16,7 +18,7 @@ export default memo(function AppDetailHeader({ app }: { app: AppItem }) {
       <img
         src={resizeImageUrl({ url: image, size: 192 })}
         alt={name}
-        className="size-24 rounded-3xl"
+        className="size-20 rounded-3xl"
       />
 
       <div className="flex flex-col grow min-w-0 min-h-0 gap-1">
@@ -26,15 +28,19 @@ export default memo(function AppDetailHeader({ app }: { app: AppItem }) {
         {/* App Description */}
         <p className="text-stone-600 dark:text-stone-400">{description}</p>
 
-        {repository.name === import.meta.env.VITE_APP_ID && (
+        {/* Spot App */}
+        {isSpotApp && <span className="text-xs text-orange-500">SPOT</span>}
+
+        {/* Current App */}
+        {isCurrentApp && (
           <p className="text-stone-600 dark:text-stone-400 text-sm">
             Currently Viewing App
           </p>
         )}
 
         {/* Open */}
-        <div className="flex gap-2 py-1">
-          {repository.name !== import.meta.env.VITE_APP_ID && (
+        <div className="flex flex-wrap gap-2 py-1">
+          {!isCurrentApp && (
             <PrimaryButton
               as="a"
               target="_blank"

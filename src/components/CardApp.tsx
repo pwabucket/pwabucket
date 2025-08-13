@@ -10,8 +10,8 @@ import { AppScreenshot } from "./AppScreenshot";
 export default memo(function CardApp({ app }: { app: AppItem }) {
   const { repository, manifest } = app;
   const { name, description } = manifest!;
+  const isSpotApp = repository.topics?.includes("pwa-spot");
   const image = new URL("pwa-192x192.png", manifest!._meta.manifestUrl).href;
-
   const slides = useScreenshots(app);
   return (
     <Link
@@ -19,7 +19,7 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
       className="flex flex-col gap-1"
       title={`${name} - ${description}`}
     >
-      <div className="flex gap-2">
+      <div className="flex gap-2 items-center">
         {/* App Icon */}
         <img
           src={resizeImageUrl({ url: image, size: 96 })}
@@ -44,6 +44,8 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
           >
             {description}
           </p>
+
+          {isSpotApp && <span className="text-xs text-orange-500">SPOT</span>}
         </div>
       </div>
 
