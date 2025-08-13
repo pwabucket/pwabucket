@@ -7,7 +7,7 @@ import {
   AppScreenshot,
   AppScreenshotPlaceholder,
 } from "@/components/AppScreenshot";
-import { memo } from "react";
+import { memo, useMemo } from "react";
 import { repeatComponent, resizeImageUrl } from "@/lib/utils";
 import { useCallback } from "react";
 import { useLocation } from "react-router";
@@ -31,12 +31,21 @@ export const ScreenshotsLightbox = ({ slides }: { slides: SlideImage[] }) => {
   const navigate = useNavigate();
   const slideIndex = location.state?.["__slideIndex"];
 
+  const resizedSlides = useMemo(
+    () =>
+      slides.map((slide) => ({
+        ...slide,
+        src: resizeImageUrl({ url: slide.src }),
+      })),
+    [slides]
+  );
+
   return (
     <Lightbox
       index={slideIndex}
       open={typeof slideIndex !== "undefined"}
       close={() => navigate(-1)}
-      slides={slides}
+      slides={resizedSlides}
       plugins={[Zoom]}
     />
   );
