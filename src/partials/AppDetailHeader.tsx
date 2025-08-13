@@ -3,6 +3,7 @@ import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import { PrimaryButton, SecondaryButton } from "@/components/Button";
 import { SiGithub } from "react-icons/si";
 import { memo } from "react";
+import { resizeImageUrl } from "@/lib/utils";
 
 export default memo(function AppDetailHeader({ app }: { app: AppItem }) {
   const { repository, manifest } = app;
@@ -12,7 +13,11 @@ export default memo(function AppDetailHeader({ app }: { app: AppItem }) {
   return (
     <div className="flex gap-2">
       {/* App Icon */}
-      <img src={image} alt={name} className="size-24 rounded-3xl" />
+      <img
+        src={resizeImageUrl({ url: image, size: 192 })}
+        alt={name}
+        className="size-24 rounded-3xl"
+      />
 
       <div className="flex flex-col grow min-w-0 min-h-0 gap-1">
         {/* App Name */}

@@ -1,12 +1,12 @@
 import type { AppItem } from "@/types/app";
 import { Link } from "react-router";
-import { cn } from "@/lib/utils";
+import { cn, resizeImageUrl } from "@/lib/utils";
 import { memo } from "react";
 
 export default memo(function GridApp({ app }: { app: AppItem }) {
   const { repository, manifest } = app;
   const { name, description } = manifest!;
-  const image = new URL("pwa-192x192.png", repository.homepage!).href;
+  const image = new URL("pwa-192x192.png", manifest!._meta.manifestUrl).href;
 
   return (
     <Link
@@ -16,7 +16,7 @@ export default memo(function GridApp({ app }: { app: AppItem }) {
     >
       {/* App Icon */}
       <img
-        src={image}
+        src={resizeImageUrl({ url: image, size: 192 })}
         alt={name}
         className="w-full mb-3 aspect-square rounded-3xl"
       />

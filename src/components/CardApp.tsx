@@ -1,7 +1,7 @@
 import useScreenshots from "@/hooks/useScreenshots";
 import type { AppItem } from "@/types/app";
 import { Link } from "react-router";
-import { cn } from "@/lib/utils";
+import { cn, resizeImageUrl } from "@/lib/utils";
 import { memo } from "react";
 
 import AppScreenshotContainer from "./AppScreenshotContainer";
@@ -21,7 +21,11 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
     >
       <div className="flex gap-2">
         {/* App Icon */}
-        <img src={image} alt={name} className="size-12 shrink-0  rounded-lg" />
+        <img
+          src={resizeImageUrl({ url: image, size: 96 })}
+          alt={name}
+          className="size-12 shrink-0  rounded-lg"
+        />
 
         <div className="flex flex-col grow min-w-0 min-h-0 gap-1">
           {/* App Name */}
@@ -45,7 +49,11 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
 
       <AppScreenshotContainer>
         {slides?.map((slide, i) => (
-          <AppScreenshot key={i} {...slide} />
+          <AppScreenshot
+            key={i}
+            {...slide}
+            src={resizeImageUrl({ url: slide.src, height: 416 })}
+          />
         ))}
       </AppScreenshotContainer>
     </Link>

@@ -8,7 +8,7 @@ import {
   AppScreenshotPlaceholder,
 } from "@/components/AppScreenshot";
 import { memo } from "react";
-import { repeatComponent } from "@/lib/utils";
+import { repeatComponent, resizeImageUrl } from "@/lib/utils";
 import { useCallback } from "react";
 import { useLocation } from "react-router";
 import { useNavigate } from "react-router";
@@ -70,7 +70,12 @@ export default memo(function AppDetailScreenshots({
     <>
       <AppScreenshotContainer>
         {slides?.map((slide, i) => (
-          <AppScreenshot key={i} {...slide} onClick={() => goToSlide(i)} />
+          <AppScreenshot
+            key={i}
+            {...slide}
+            src={resizeImageUrl({ url: slide.src, height: 416 })}
+            onClick={() => goToSlide(i)}
+          />
         ))}
       </AppScreenshotContainer>
 
