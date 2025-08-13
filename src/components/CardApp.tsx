@@ -10,7 +10,7 @@ import { AppScreenshot } from "./AppScreenshot";
 export default memo(function CardApp({ app }: { app: AppItem }) {
   const { repository, manifest } = app;
   const { name, description } = manifest!;
-  const image = new URL("pwa-192x192.png", repository.homepage!).href;
+  const image = new URL("pwa-192x192.png", manifest!._meta.manifestUrl).href;
 
   const slides = useScreenshots(app);
   return (

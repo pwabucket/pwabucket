@@ -7,7 +7,7 @@ import { memo } from "react";
 export default memo(function AppDetailHeader({ app }: { app: AppItem }) {
   const { repository, manifest } = app;
   const { name, description } = manifest!;
-  const image = new URL("pwa-192x192.png", repository.homepage as string).href;
+  const image = new URL("pwa-192x192.png", manifest!._meta.manifestUrl).href;
 
   return (
     <div className="flex gap-2">
