@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-08-16T06:30:43.201Z",
+  "generatedAt": "2025-08-17T06:31:37.978Z",
   "organization": "pwabucket",
   "totalRepositories": 6,
   "repositories": [
@@ -85,7 +85,91 @@
         ],
         "_meta": {
           "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2025-08-16T06:30:43.292Z"
+          "fetchedAt": "2025-08-17T06:31:38.058Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 675343554,
+        "name": "pwabucket",
+        "fullName": "pwabucket/pwabucket",
+        "htmlUrl": "https://github.com/pwabucket/pwabucket",
+        "description": "PWABucket - Your go-to Progressive Web Apps Store.",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "pwa"
+        ],
+        "createdAt": "2023-08-06T15:58:19Z",
+        "updatedAt": "2025-08-16T06:30:47Z",
+        "pushedAt": "2025-08-16T06:30:44Z",
+        "homepage": "https://pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "PWABucket",
+        "short_name": "PWABucket",
+        "start_url": "https://pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "lang": "en",
+        "scope": "https://pwabucket.com/",
+        "description": "A Progressive Web App Store",
+        "theme_color": "#ffffff",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-desktop-1.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpg",
+            "form_factor": "wide"
+          },
+          {
+            "src": "screenshot-desktop-2.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpg",
+            "form_factor": "wide"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-08-17T06:31:38.098Z"
         }
       },
       "errors": []
@@ -164,91 +248,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-08-16T06:30:43.361Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 675343554,
-        "name": "pwabucket",
-        "fullName": "pwabucket/pwabucket",
-        "htmlUrl": "https://github.com/pwabucket/pwabucket",
-        "description": "PWABucket - Your go-to Progressive Web Apps Store.",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "pwa"
-        ],
-        "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2025-08-15T06:33:50Z",
-        "pushedAt": "2025-08-15T06:33:46Z",
-        "homepage": "https://pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "PWABucket",
-        "short_name": "PWABucket",
-        "start_url": "https://pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#ffffff",
-        "lang": "en",
-        "scope": "https://pwabucket.com/",
-        "description": "A Progressive Web App Store",
-        "theme_color": "#ffffff",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-desktop-1.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
-          },
-          {
-            "src": "screenshot-desktop-2.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-08-16T06:30:43.363Z"
+          "fetchedAt": "2025-08-17T06:31:38.126Z"
         }
       },
       "errors": []
@@ -349,84 +349,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-08-16T06:30:43.436Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1024439777,
-        "name": "pwa-ai-earn",
-        "fullName": "pwabucket/pwa-ai-earn",
-        "htmlUrl": "https://github.com/pwabucket/pwa-ai-earn",
-        "description": "Ai-Earn Tracker - Track your investments",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "pwa"
-        ],
-        "createdAt": "2025-07-22T17:44:38Z",
-        "updatedAt": "2025-08-08T09:42:09Z",
-        "pushedAt": "2025-08-08T09:42:05Z",
-        "homepage": "https://ai-earn.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "AiEarn Tracker",
-        "short_name": "AiEarn Tracker",
-        "description": "A simple PWA to track your AI earnings and expenses.",
-        "start_url": "https://ai-earn.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#ffffff",
-        "theme_color": "#171717",
-        "lang": "en",
-        "scope": "https://ai-earn.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://ai-earn.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-08-16T06:30:43.450Z"
+          "fetchedAt": "2025-08-17T06:31:38.193Z"
         }
       },
       "errors": []
@@ -506,7 +429,84 @@
         ],
         "_meta": {
           "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-08-16T06:30:43.527Z"
+          "fetchedAt": "2025-08-17T06:31:38.196Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1024439777,
+        "name": "pwa-ai-earn",
+        "fullName": "pwabucket/pwa-ai-earn",
+        "htmlUrl": "https://github.com/pwabucket/pwa-ai-earn",
+        "description": "Ai-Earn Tracker - Track your investments",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "pwa"
+        ],
+        "createdAt": "2025-07-22T17:44:38Z",
+        "updatedAt": "2025-08-08T09:42:09Z",
+        "pushedAt": "2025-08-08T09:42:05Z",
+        "homepage": "https://ai-earn.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "AiEarn Tracker",
+        "short_name": "AiEarn Tracker",
+        "description": "A simple PWA to track your AI earnings and expenses.",
+        "start_url": "https://ai-earn.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "theme_color": "#171717",
+        "lang": "en",
+        "scope": "https://ai-earn.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://ai-earn.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-08-17T06:31:38.264Z"
         }
       },
       "errors": []
