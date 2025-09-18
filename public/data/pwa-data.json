@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-17T06:30:58.227Z",
+  "generatedAt": "2025-09-18T06:30:52.410Z",
   "organization": "pwabucket",
   "totalRepositories": 5,
   "repositories": [
@@ -17,8 +17,8 @@
           "pwa"
         ],
         "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2025-09-16T06:31:30Z",
-        "pushedAt": "2025-09-16T06:31:26Z",
+        "updatedAt": "2025-09-17T06:31:02Z",
+        "pushedAt": "2025-09-17T06:30:59Z",
         "homepage": "https://pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
@@ -82,43 +82,47 @@
         ],
         "_meta": {
           "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-09-17T06:30:58.310Z"
+          "fetchedAt": "2025-09-18T06:30:52.580Z"
         }
       },
       "errors": []
     },
     {
       "repository": {
-        "id": 1030376407,
-        "name": "pwa-safe",
-        "fullName": "pwabucket/pwa-safe",
-        "htmlUrl": "https://github.com/pwabucket/pwa-safe",
-        "description": "Offline Encrypted Safe",
+        "id": 1024439777,
+        "name": "pwa-ai-earn",
+        "fullName": "pwabucket/pwa-ai-earn",
+        "htmlUrl": "https://github.com/pwabucket/pwa-ai-earn",
+        "description": "A PWA log book for AiEarn — record investments, track withdrawals, view targets, and simulate reinvestments.",
         "stargazersCount": 0,
         "forksCount": 0,
         "language": "TypeScript",
         "topics": [
+          "finance-app",
+          "google-drive-sync",
+          "investment-tracker",
+          "logbook",
+          "offline-first",
           "pwa",
-          "sci-fi",
-          "vault"
+          "pwabucket"
         ],
-        "createdAt": "2025-08-01T14:31:08Z",
-        "updatedAt": "2025-08-29T17:05:16Z",
-        "pushedAt": "2025-08-29T17:05:22Z",
-        "homepage": "https://safe.pwabucket.com/",
+        "createdAt": "2025-07-22T17:44:38Z",
+        "updatedAt": "2025-09-05T08:44:42Z",
+        "pushedAt": "2025-09-05T08:41:47Z",
+        "homepage": "https://ai-earn.pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
       },
       "manifest": {
-        "name": "Safe",
-        "short_name": "Safe",
-        "description": "Secure vault for your secrets and sensitive data.",
-        "start_url": "https://safe.pwabucket.com/",
+        "name": "AiEarn Tracker",
+        "short_name": "AiEarn Tracker",
+        "description": "A log book for your AiEarn investments.",
+        "start_url": "https://ai-earn.pwabucket.com/",
         "display": "standalone",
-        "background_color": "#262626",
-        "theme_color": "#262626",
+        "background_color": "#ffffff",
+        "theme_color": "#171717",
         "lang": "en",
-        "scope": "https://safe.pwabucket.com/",
+        "scope": "https://ai-earn.pwabucket.com/",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -157,11 +161,16 @@
             "src": "screenshot-mobile-3.jpg",
             "sizes": "1080x1920",
             "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-09-17T06:30:58.388Z"
+          "manifestUrl": "https://ai-earn.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-09-18T06:30:52.591Z"
         }
       },
       "errors": []
@@ -248,7 +257,86 @@
         ],
         "_meta": {
           "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2025-09-17T06:30:58.412Z"
+          "fetchedAt": "2025-09-18T06:30:52.646Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1030376407,
+        "name": "pwa-safe",
+        "fullName": "pwabucket/pwa-safe",
+        "htmlUrl": "https://github.com/pwabucket/pwa-safe",
+        "description": "Offline Encrypted Safe",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "pwa",
+          "sci-fi",
+          "vault"
+        ],
+        "createdAt": "2025-08-01T14:31:08Z",
+        "updatedAt": "2025-08-29T17:05:16Z",
+        "pushedAt": "2025-08-29T17:05:22Z",
+        "homepage": "https://safe.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Safe",
+        "short_name": "Safe",
+        "description": "Secure vault for your secrets and sensitive data.",
+        "start_url": "https://safe.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#262626",
+        "theme_color": "#262626",
+        "lang": "en",
+        "scope": "https://safe.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-09-18T06:30:52.727Z"
         }
       },
       "errors": []
@@ -349,95 +437,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-09-17T06:30:58.495Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1024439777,
-        "name": "pwa-ai-earn",
-        "fullName": "pwabucket/pwa-ai-earn",
-        "htmlUrl": "https://github.com/pwabucket/pwa-ai-earn",
-        "description": "A PWA log book for AiEarn — record investments, track withdrawals, view targets, and simulate reinvestments.",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "finance-app",
-          "google-drive-sync",
-          "investment-tracker",
-          "logbook",
-          "offline-first",
-          "pwa",
-          "pwabucket"
-        ],
-        "createdAt": "2025-07-22T17:44:38Z",
-        "updatedAt": "2025-09-05T08:44:42Z",
-        "pushedAt": "2025-09-05T08:41:47Z",
-        "homepage": "https://ai-earn.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "AiEarn Tracker",
-        "short_name": "AiEarn Tracker",
-        "description": "A log book for your AiEarn investments.",
-        "start_url": "https://ai-earn.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#ffffff",
-        "theme_color": "#171717",
-        "lang": "en",
-        "scope": "https://ai-earn.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://ai-earn.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-09-17T06:30:58.562Z"
+          "fetchedAt": "2025-09-18T06:30:52.748Z"
         }
       },
       "errors": []
