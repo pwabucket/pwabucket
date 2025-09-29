@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-28T06:28:50.232Z",
+  "generatedAt": "2025-09-29T06:33:40.728Z",
   "organization": "pwabucket",
   "totalRepositories": 6,
   "repositories": [
@@ -17,8 +17,8 @@
           "pwa"
         ],
         "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2025-09-27T06:27:01Z",
-        "pushedAt": "2025-09-27T06:26:58Z",
+        "updatedAt": "2025-09-28T06:28:54Z",
+        "pushedAt": "2025-09-28T06:28:50Z",
         "homepage": "https://pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
@@ -82,7 +82,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-09-28T06:28:50.344Z"
+          "fetchedAt": "2025-09-29T06:33:41.033Z"
         }
       },
       "errors": []
@@ -170,43 +170,41 @@
         ],
         "_meta": {
           "manifestUrl": "https://ai-earn.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-09-28T06:28:50.345Z"
+          "fetchedAt": "2025-09-29T06:33:41.056Z"
         }
       },
       "errors": []
     },
     {
       "repository": {
-        "id": 1030376407,
-        "name": "pwa-safe",
-        "fullName": "pwabucket/pwa-safe",
-        "htmlUrl": "https://github.com/pwabucket/pwa-safe",
-        "description": "Offline Encrypted Safe",
+        "id": 1037094232,
+        "name": "pwa-spot-pluxscore",
+        "fullName": "pwabucket/pwa-spot-pluxscore",
+        "htmlUrl": "https://github.com/pwabucket/pwa-spot-pluxscore",
+        "description": "All-in-one social media for sport fans.",
         "stargazersCount": 0,
         "forksCount": 0,
-        "language": "TypeScript",
+        "language": null,
         "topics": [
-          "pwa",
-          "sci-fi",
-          "vault"
+          "pwa-spot"
         ],
-        "createdAt": "2025-08-01T14:31:08Z",
-        "updatedAt": "2025-08-29T17:05:16Z",
-        "pushedAt": "2025-08-29T17:05:22Z",
-        "homepage": "https://safe.pwabucket.com/",
-        "hasPages": true,
+        "createdAt": "2025-08-13T04:06:24Z",
+        "updatedAt": "2025-08-13T04:45:24Z",
+        "pushedAt": "2025-08-13T04:45:21Z",
+        "homepage": "https://pluxscore.com.ng",
+        "hasPages": false,
         "defaultBranch": "main"
       },
       "manifest": {
-        "name": "Safe",
-        "short_name": "Safe",
-        "description": "Secure vault for your secrets and sensitive data.",
-        "start_url": "https://safe.pwabucket.com/",
+        "name": "Pluxscore",
+        "short_name": "Pluxscore",
+        "description": "All-in-one social media for sport fans",
+        "start_url": "https://pluxscore.com.ng/",
+        "scope": "https://pluxscore.com.ng/",
         "display": "standalone",
-        "background_color": "#262626",
-        "theme_color": "#262626",
+        "background_color": "#000000",
+        "theme_color": "#000000",
         "lang": "en",
-        "scope": "https://safe.pwabucket.com/",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -245,11 +243,21 @@
             "src": "screenshot-mobile-3.jpg",
             "sizes": "1080x1920",
             "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-5.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-09-28T06:28:50.398Z"
+          "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
+          "fetchedAt": "2025-09-29T06:33:41.095Z"
         }
       },
       "errors": []
@@ -350,7 +358,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-09-28T06:28:50.414Z"
+          "fetchedAt": "2025-09-29T06:33:41.164Z"
         }
       },
       "errors": []
@@ -430,41 +438,43 @@
         ],
         "_meta": {
           "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-09-28T06:28:50.415Z"
+          "fetchedAt": "2025-09-29T06:33:41.217Z"
         }
       },
       "errors": []
     },
     {
       "repository": {
-        "id": 1037094232,
-        "name": "pwa-spot-pluxscore",
-        "fullName": "pwabucket/pwa-spot-pluxscore",
-        "htmlUrl": "https://github.com/pwabucket/pwa-spot-pluxscore",
-        "description": "All-in-one social media for sport fans.",
+        "id": 1030376407,
+        "name": "pwa-safe",
+        "fullName": "pwabucket/pwa-safe",
+        "htmlUrl": "https://github.com/pwabucket/pwa-safe",
+        "description": "Offline Encrypted Safe",
         "stargazersCount": 0,
         "forksCount": 0,
-        "language": null,
+        "language": "TypeScript",
         "topics": [
-          "pwa-spot"
+          "pwa",
+          "sci-fi",
+          "vault"
         ],
-        "createdAt": "2025-08-13T04:06:24Z",
-        "updatedAt": "2025-08-13T04:45:24Z",
-        "pushedAt": "2025-08-13T04:45:21Z",
-        "homepage": "https://pluxscore.com.ng",
-        "hasPages": false,
+        "createdAt": "2025-08-01T14:31:08Z",
+        "updatedAt": "2025-08-29T17:05:16Z",
+        "pushedAt": "2025-08-29T17:05:22Z",
+        "homepage": "https://safe.pwabucket.com/",
+        "hasPages": true,
         "defaultBranch": "main"
       },
       "manifest": {
-        "name": "Pluxscore",
-        "short_name": "Pluxscore",
-        "description": "All-in-one social media for sport fans",
-        "start_url": "https://pluxscore.com.ng/",
-        "scope": "https://pluxscore.com.ng/",
+        "name": "Safe",
+        "short_name": "Safe",
+        "description": "Secure vault for your secrets and sensitive data.",
+        "start_url": "https://safe.pwabucket.com/",
         "display": "standalone",
-        "background_color": "#000000",
-        "theme_color": "#000000",
+        "background_color": "#262626",
+        "theme_color": "#262626",
         "lang": "en",
+        "scope": "https://safe.pwabucket.com/",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -503,21 +513,11 @@
             "src": "screenshot-mobile-3.jpg",
             "sizes": "1080x1920",
             "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-5.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2025-09-28T06:28:50.456Z"
+          "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-09-29T06:33:41.240Z"
         }
       },
       "errors": []
