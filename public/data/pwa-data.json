@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-02T06:30:52.889Z",
+  "generatedAt": "2025-11-03T06:34:20.807Z",
   "organization": "pwabucket",
   "totalRepositories": 6,
   "repositories": [
@@ -17,8 +17,8 @@
           "pwa"
         ],
         "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2025-11-01T06:29:19Z",
-        "pushedAt": "2025-11-01T06:29:15Z",
+        "updatedAt": "2025-11-02T06:30:57Z",
+        "pushedAt": "2025-11-02T06:30:53Z",
         "homepage": "https://pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
@@ -82,7 +82,95 @@
         ],
         "_meta": {
           "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-02T06:30:53.010Z"
+          "fetchedAt": "2025-11-03T06:34:21.038Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1024439777,
+        "name": "pwa-ai-earn",
+        "fullName": "pwabucket/pwa-ai-earn",
+        "htmlUrl": "https://github.com/pwabucket/pwa-ai-earn",
+        "description": "A PWA log book for AiEarn — record investments, track withdrawals, view targets, and simulate reinvestments.",
+        "stargazersCount": 1,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "finance-app",
+          "google-drive-sync",
+          "investment-tracker",
+          "logbook",
+          "offline-first",
+          "pwa",
+          "pwabucket"
+        ],
+        "createdAt": "2025-07-22T17:44:38Z",
+        "updatedAt": "2025-11-02T15:09:15Z",
+        "pushedAt": "2025-11-02T15:09:56Z",
+        "homepage": "https://ai-earn.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "AiEarn Tracker",
+        "short_name": "AiEarn Tracker",
+        "description": "A log book for your AiEarn investments.",
+        "start_url": "https://ai-earn.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "theme_color": "#171717",
+        "lang": "en",
+        "scope": "https://ai-earn.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://ai-earn.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-11-03T06:34:21.039Z"
         }
       },
       "errors": []
@@ -162,95 +250,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-02T06:30:53.037Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1024439777,
-        "name": "pwa-ai-earn",
-        "fullName": "pwabucket/pwa-ai-earn",
-        "htmlUrl": "https://github.com/pwabucket/pwa-ai-earn",
-        "description": "A PWA log book for AiEarn — record investments, track withdrawals, view targets, and simulate reinvestments.",
-        "stargazersCount": 1,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "finance-app",
-          "google-drive-sync",
-          "investment-tracker",
-          "logbook",
-          "offline-first",
-          "pwa",
-          "pwabucket"
-        ],
-        "createdAt": "2025-07-22T17:44:38Z",
-        "updatedAt": "2025-10-24T06:18:53Z",
-        "pushedAt": "2025-09-05T08:41:47Z",
-        "homepage": "https://ai-earn.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "AiEarn Tracker",
-        "short_name": "AiEarn Tracker",
-        "description": "A log book for your AiEarn investments.",
-        "start_url": "https://ai-earn.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#ffffff",
-        "theme_color": "#171717",
-        "lang": "en",
-        "scope": "https://ai-earn.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://ai-earn.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-02T06:30:53.086Z"
+          "fetchedAt": "2025-11-03T06:34:21.074Z"
         }
       },
       "errors": []
@@ -329,94 +329,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-02T06:30:53.090Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1037094232,
-        "name": "pwa-spot-pluxscore",
-        "fullName": "pwabucket/pwa-spot-pluxscore",
-        "htmlUrl": "https://github.com/pwabucket/pwa-spot-pluxscore",
-        "description": "All-in-one social media for sport fans.",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": null,
-        "topics": [
-          "pwa-spot"
-        ],
-        "createdAt": "2025-08-13T04:06:24Z",
-        "updatedAt": "2025-08-13T04:45:24Z",
-        "pushedAt": "2025-08-13T04:45:21Z",
-        "homepage": "https://pluxscore.com.ng",
-        "hasPages": false,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Pluxscore",
-        "short_name": "Pluxscore",
-        "description": "All-in-one social media for sport fans",
-        "start_url": "https://pluxscore.com.ng/",
-        "scope": "https://pluxscore.com.ng/",
-        "display": "standalone",
-        "background_color": "#000000",
-        "theme_color": "#000000",
-        "lang": "en",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-5.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2025-11-02T06:30:53.122Z"
+          "fetchedAt": "2025-11-03T06:34:21.119Z"
         }
       },
       "errors": []
@@ -517,7 +430,94 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-02T06:30:53.249Z"
+          "fetchedAt": "2025-11-03T06:34:21.120Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1037094232,
+        "name": "pwa-spot-pluxscore",
+        "fullName": "pwabucket/pwa-spot-pluxscore",
+        "htmlUrl": "https://github.com/pwabucket/pwa-spot-pluxscore",
+        "description": "All-in-one social media for sport fans.",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": null,
+        "topics": [
+          "pwa-spot"
+        ],
+        "createdAt": "2025-08-13T04:06:24Z",
+        "updatedAt": "2025-08-13T04:45:24Z",
+        "pushedAt": "2025-08-13T04:45:21Z",
+        "homepage": "https://pluxscore.com.ng",
+        "hasPages": false,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Pluxscore",
+        "short_name": "Pluxscore",
+        "description": "All-in-one social media for sport fans",
+        "start_url": "https://pluxscore.com.ng/",
+        "scope": "https://pluxscore.com.ng/",
+        "display": "standalone",
+        "background_color": "#000000",
+        "theme_color": "#000000",
+        "lang": "en",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-5.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
+          "fetchedAt": "2025-11-03T06:34:21.161Z"
         }
       },
       "errors": []
