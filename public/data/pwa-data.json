@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-08T06:29:54.070Z",
+  "generatedAt": "2025-11-09T06:30:04.812Z",
   "organization": "pwabucket",
   "totalRepositories": 8,
   "repositories": [
@@ -20,8 +20,8 @@
           "tether"
         ],
         "createdAt": "2025-10-26T08:14:22Z",
-        "updatedAt": "2025-11-08T06:11:26Z",
-        "pushedAt": "2025-11-08T06:11:23Z",
+        "updatedAt": "2025-11-09T01:54:24Z",
+        "pushedAt": "2025-11-09T01:55:00Z",
         "homepage": "https://packer.pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
@@ -90,7 +90,91 @@
         ],
         "_meta": {
           "manifestUrl": "https://packer.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-08T06:29:54.248Z"
+          "fetchedAt": "2025-11-09T06:30:05.069Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 675343554,
+        "name": "pwabucket",
+        "fullName": "pwabucket/pwabucket",
+        "htmlUrl": "https://github.com/pwabucket/pwabucket",
+        "description": "PWABucket - Your go-to Progressive Web Apps Store.",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "pwa"
+        ],
+        "createdAt": "2023-08-06T15:58:19Z",
+        "updatedAt": "2025-11-08T06:29:58Z",
+        "pushedAt": "2025-11-08T06:29:55Z",
+        "homepage": "https://pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "PWABucket",
+        "short_name": "PWABucket",
+        "start_url": "https://pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "lang": "en",
+        "scope": "https://pwabucket.com/",
+        "description": "A Progressive Web App Store",
+        "theme_color": "#ffffff",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-desktop-1.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpg",
+            "form_factor": "wide"
+          },
+          {
+            "src": "screenshot-desktop-2.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpg",
+            "form_factor": "wide"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-11-09T06:30:05.085Z"
         }
       },
       "errors": []
@@ -112,8 +196,8 @@
           "ton"
         ],
         "createdAt": "2025-06-23T15:27:53Z",
-        "updatedAt": "2025-10-30T03:11:24Z",
-        "pushedAt": "2025-10-30T03:11:32Z",
+        "updatedAt": "2025-11-08T09:40:42Z",
+        "pushedAt": "2025-11-08T09:40:46Z",
         "homepage": "https://keza.pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
@@ -170,7 +254,96 @@
         ],
         "_meta": {
           "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-08T06:29:54.342Z"
+          "fetchedAt": "2025-11-09T06:30:05.102Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1084705345,
+        "name": "pwa-parcel",
+        "fullName": "pwabucket/pwa-parcel",
+        "htmlUrl": "https://github.com/pwabucket/pwa-parcel",
+        "description": "Tokens Splitter and Merger",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "crypto",
+          "pwa"
+        ],
+        "createdAt": "2025-10-28T03:40:09Z",
+        "updatedAt": "2025-11-09T01:52:03Z",
+        "pushedAt": "2025-11-09T01:52:07Z",
+        "homepage": "https://parcel.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Parcel",
+        "short_name": "Parcel",
+        "description": "Split tokens to multiple addresses or Merge tokens from multiple sources on any blockchain.",
+        "start_url": "https://parcel.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#000",
+        "theme_color": "#000",
+        "lang": "en",
+        "scope": "https://parcel.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-desktop-wide.jpg",
+            "sizes": "1920x1080",
+            "type": "image/jpg",
+            "form_factor": "wide"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://parcel.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-11-09T06:30:05.171Z"
         }
       },
       "errors": []
@@ -258,41 +431,43 @@
         ],
         "_meta": {
           "manifestUrl": "https://ai-earn.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-08T06:29:54.342Z"
+          "fetchedAt": "2025-11-09T06:30:05.177Z"
         }
       },
       "errors": []
     },
     {
       "repository": {
-        "id": 675343554,
-        "name": "pwabucket",
-        "fullName": "pwabucket/pwabucket",
-        "htmlUrl": "https://github.com/pwabucket/pwabucket",
-        "description": "PWABucket - Your go-to Progressive Web Apps Store.",
+        "id": 1030376407,
+        "name": "pwa-safe",
+        "fullName": "pwabucket/pwa-safe",
+        "htmlUrl": "https://github.com/pwabucket/pwa-safe",
+        "description": "Offline Encrypted Safe",
         "stargazersCount": 0,
         "forksCount": 0,
         "language": "TypeScript",
         "topics": [
-          "pwa"
+          "pwa",
+          "sci-fi",
+          "vault"
         ],
-        "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2025-11-07T06:33:00Z",
-        "pushedAt": "2025-11-07T06:32:56Z",
-        "homepage": "https://pwabucket.com/",
+        "createdAt": "2025-08-01T14:31:08Z",
+        "updatedAt": "2025-11-06T20:01:31Z",
+        "pushedAt": "2025-11-06T20:02:31Z",
+        "homepage": "https://safe.pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
       },
       "manifest": {
-        "name": "PWABucket",
-        "short_name": "PWABucket",
-        "start_url": "https://pwabucket.com/",
+        "name": "Safe",
+        "short_name": "Safe",
+        "description": "Secure vault for your secrets and sensitive data.",
+        "start_url": "https://safe.pwabucket.com/",
         "display": "standalone",
-        "background_color": "#ffffff",
+        "background_color": "#262626",
+        "theme_color": "#262626",
         "lang": "en",
-        "scope": "https://pwabucket.com/",
-        "description": "A Progressive Web App Store",
-        "theme_color": "#ffffff",
+        "scope": "https://safe.pwabucket.com/",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -328,21 +503,14 @@
             "type": "image/jpg"
           },
           {
-            "src": "screenshot-desktop-1.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
-          },
-          {
-            "src": "screenshot-desktop-2.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-08T06:29:54.360Z"
+          "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-11-09T06:30:05.193Z"
         }
       },
       "errors": []
@@ -429,175 +597,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2025-11-08T06:29:54.371Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1084705345,
-        "name": "pwa-parcel",
-        "fullName": "pwabucket/pwa-parcel",
-        "htmlUrl": "https://github.com/pwabucket/pwa-parcel",
-        "description": "Tokens Splitter and Merger",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "crypto",
-          "pwa"
-        ],
-        "createdAt": "2025-10-28T03:40:09Z",
-        "updatedAt": "2025-11-07T14:41:44Z",
-        "pushedAt": "2025-11-07T14:41:50Z",
-        "homepage": "https://parcel.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Parcel",
-        "short_name": "Parcel",
-        "description": "Split tokens to multiple addresses or Merge tokens from multiple sources on any blockchain.",
-        "start_url": "https://parcel.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#000",
-        "theme_color": "#000",
-        "lang": "en",
-        "scope": "https://parcel.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-desktop-wide.jpg",
-            "sizes": "1920x1080",
-            "type": "image/jpg",
-            "form_factor": "wide"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://parcel.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-08T06:29:54.377Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1030376407,
-        "name": "pwa-safe",
-        "fullName": "pwabucket/pwa-safe",
-        "htmlUrl": "https://github.com/pwabucket/pwa-safe",
-        "description": "Offline Encrypted Safe",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "pwa",
-          "sci-fi",
-          "vault"
-        ],
-        "createdAt": "2025-08-01T14:31:08Z",
-        "updatedAt": "2025-11-06T20:01:31Z",
-        "pushedAt": "2025-11-06T20:02:31Z",
-        "homepage": "https://safe.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Safe",
-        "short_name": "Safe",
-        "description": "Secure vault for your secrets and sensitive data.",
-        "start_url": "https://safe.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#262626",
-        "theme_color": "#262626",
-        "lang": "en",
-        "scope": "https://safe.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-08T06:29:54.410Z"
+          "fetchedAt": "2025-11-09T06:30:05.204Z"
         }
       },
       "errors": []
@@ -698,7 +698,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-08T06:29:54.413Z"
+          "fetchedAt": "2025-11-09T06:30:05.235Z"
         }
       },
       "errors": []
