@@ -22,7 +22,7 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
         className={cn(
           "flex flex-col gap-2 p-4",
           "bg-neutral-900",
-          "rounded-lg overflow-clip"
+          "rounded-xl overflow-clip"
         )}
         title={`${name} - ${description}`}
       >
@@ -58,7 +58,10 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
 
         <AppPhotoAlbum
           total={slides.length}
-          photos={slides.slice(0, MAX_IMAGES_PREVIEW)}
+          photos={slides.slice(0, MAX_IMAGES_PREVIEW).map((item) => ({
+            ...item,
+            src: resizeImageUrl({ url: item.src, width: 400 }),
+          }))}
           columns={Math.min(MAX_IMAGES_COLUMN, slides.length)}
         />
       </Link>
