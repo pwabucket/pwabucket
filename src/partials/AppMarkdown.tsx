@@ -10,6 +10,8 @@ export default function AppMarkdown({ app }: { app: AppItem }) {
 
   const { isPending, isError, data } = useAppMarkdownQuery(repository.name);
 
+  console.log(app);
+
   return isPending ? (
     <Spinner />
   ) : isError ? (
@@ -18,7 +20,7 @@ export default function AppMarkdown({ app }: { app: AppItem }) {
     <div
       className={cn(
         "p-8",
-        "rounded-2xl",
+        "rounded-xl",
         "border border-purple-500",
         "max-w-3xl"
       )}
@@ -35,7 +37,16 @@ export default function AppMarkdown({ app }: { app: AppItem }) {
           skipHtml={true}
           components={{
             a: ({ node, ...props }) => (
-              <a {...props} target="_blank" rel="noopener noreferrer" />
+              <a
+                {...props}
+                href={
+                  props.href
+                    ? new URL(props.href, repository.htmlUrl).toString()
+                    : undefined
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              />
             ),
           }}
         >
