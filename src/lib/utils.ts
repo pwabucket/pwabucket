@@ -28,6 +28,7 @@ export function resizeImageUrl({
   const options: Record<string, string> = {
     url,
     output: "webp",
+    maxage: "1d",
     q: "100",
   };
 
