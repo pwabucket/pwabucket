@@ -50,6 +50,12 @@ importers:
       react-markdown:
         specifier: ^10.1.0
         version: 10.1.0(@types/react@19.0.10)(react@19.0.0)
+      react-masonry-css:
+        specifier: ^1.0.16
+        version: 1.0.16(react@19.0.0)
+      react-photo-album:
+        specifier: ^3.2.1
+        version: 3.2.1(@types/react@19.0.10)(react@19.0.0)
       react-router:
         specifier: ^7.3.0
         version: 7.3.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -2802,6 +2808,21 @@ packages:
     peerDependencies:
       '@types/react': '>=18'
       react: '>=18'
+
+  react-masonry-css@1.0.16:
+    resolution: {integrity: sha512-KSW0hR2VQmltt/qAa3eXOctQDyOu7+ZBevtKgpNDSzT7k5LA/0XntNa9z9HKCdz3QlxmJHglTZ18e4sX4V8zZQ==}
+    peerDependencies:
+      react: '>=16.0.0'
+
+  react-photo-album@3.2.1:
+    resolution: {integrity: sha512-I4C4ZN/BXE2KEj3lHEhlHc1sAeetgOPLF2UaiJgPW1s5CKotg1l2p+ZOpL9hA868pUZ9BA5TTXXGmFiFG+jdIg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/react': ^18 || ^19
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   react-router@7.3.0:
     resolution: {integrity: sha512-466f2W7HIWaNXTKM5nHTqNxLrHTyXybm7R0eBlVSt0k/u55tTCDO194OIx/NrYD4TS5SXKTNekXfT37kMKUjgw==}
@@ -6294,6 +6315,16 @@ snapshots:
       vfile: 6.0.3
     transitivePeerDependencies:
       - supports-color
+
+  react-masonry-css@1.0.16(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+
+  react-photo-album@3.2.1(@types/react@19.0.10)(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+    optionalDependencies:
+      '@types/react': 19.0.10
 
   react-router@7.3.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:

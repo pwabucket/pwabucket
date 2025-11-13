@@ -11,14 +11,7 @@ export default function Header({
   rightContent?: React.ReactNode;
 }) {
   return (
-    <div
-      className={cn(
-        "bg-white dark:bg-black",
-        "shrink-0 sticky top-0 border-b",
-        "border-stone-300 dark:border-stone-700",
-        "z-50"
-      )}
-    >
+    <div className={cn("bg-neutral-900", "shrink-0 sticky top-0", "z-50")}>
       <div className="container mx-auto flex items-center gap-2 p-1">
         {/* Left Content */}
         <div className="shrink-0 size-10">{leftContent}</div>

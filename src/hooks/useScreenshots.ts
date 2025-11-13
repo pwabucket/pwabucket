@@ -12,7 +12,7 @@ export default function useScreenshots(app: AppItem) {
         width: Number(screenshot.sizes!.split("x")[0]),
         height: Number(screenshot.sizes!.split("x")[1]),
         alt: name,
-      })),
+      })) || [],
     [name, manifest]
   );
 }

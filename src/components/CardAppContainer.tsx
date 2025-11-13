@@ -1,4 +1,11 @@
-import { cn } from "@/lib/utils";
+import Masonry from "react-masonry-css";
+
+const breakpointColumnsObj = {
+  default: 4,
+  1200: 3,
+  919: 2,
+  768: 1,
+};
 
 export default function CardAppContainer({
   children,
@@ -6,12 +13,12 @@ export default function CardAppContainer({
   children: React.ReactNode;
 }) {
   return (
-    <div
-      className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-      )}
+    <Masonry
+      breakpointCols={breakpointColumnsObj}
+      className="flex -ml-4 w-auto"
+      columnClassName="pl-4 bg-clip-padding"
     >
       {children}
-    </div>
+    </Masonry>
   );
 }

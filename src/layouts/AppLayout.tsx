@@ -23,7 +23,7 @@ export default function AppLayout({
       />
       <div
         className={cn(
-          "grow w-full min-w-0 min-h-0 container mx-auto p-4",
+          "grow w-full min-w-0 min-h-0 max-w-8xl mx-auto p-4",
           "flex flex-col",
           className
         )}

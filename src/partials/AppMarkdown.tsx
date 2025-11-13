@@ -15,7 +15,14 @@ export default function AppMarkdown({ app }: { app: AppItem }) {
   ) : isError ? (
     <QueryError />
   ) : (
-    <div className={cn("p-8", "rounded-2xl", "border border-purple-500")}>
+    <div
+      className={cn(
+        "p-8",
+        "rounded-2xl",
+        "border border-purple-500",
+        "max-w-3xl"
+      )}
+    >
       <div
         className={cn(
           "prose prose-stone",

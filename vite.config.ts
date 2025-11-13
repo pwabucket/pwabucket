@@ -24,6 +24,7 @@ export default defineConfig(({ mode }) => {
         registerType: "autoUpdate",
         workbox: {
           globPatterns: ["**/*.*"],
+          globIgnores: ["**/screenshot-*.jpg", "**/social-preview.png"],
           maximumFileSizeToCacheInBytes: 5 * 1024 ** 2,
         },
         manifest: {

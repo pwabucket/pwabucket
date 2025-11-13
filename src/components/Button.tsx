@@ -23,13 +23,6 @@ export const PrimaryButton = memo(function (props) {
 
 export const SecondaryButton = memo(function (props) {
   return (
-    <Button
-      {...props}
-      className={cn(
-        "bg-black text-white",
-        "dark:bg-white dark:text-black",
-        props.className
-      )}
-    />
+    <Button {...props} className={cn("bg-white text-black", props.className)} />
   );
 }) as DynamicComponent<"button">;
