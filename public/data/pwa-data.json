@@ -1,42 +1,38 @@
 {
-  "generatedAt": "2025-11-24T06:34:32.571Z",
+  "generatedAt": "2025-11-25T06:35:21.840Z",
   "organization": "pwabucket",
   "totalRepositories": 8,
   "repositories": [
     {
       "repository": {
-        "id": 1083535447,
-        "name": "pwa-packer",
-        "fullName": "pwabucket/pwa-packer",
-        "htmlUrl": "https://github.com/pwabucket/pwa-packer",
-        "description": "Batch BSC Transactions with Built-in Hash Maker",
+        "id": 675343554,
+        "name": "pwabucket",
+        "fullName": "pwabucket/pwabucket",
+        "htmlUrl": "https://github.com/pwabucket/pwabucket",
+        "description": "PWABucket - Your go-to Progressive Web Apps Store.",
         "stargazersCount": 0,
         "forksCount": 0,
         "language": "TypeScript",
         "topics": [
-          "bep20",
-          "crypto",
-          "pwa",
-          "tether"
+          "pwa"
         ],
-        "createdAt": "2025-10-26T08:14:22Z",
-        "updatedAt": "2025-11-23T11:35:59Z",
-        "pushedAt": "2025-11-23T11:36:05Z",
-        "homepage": "https://packer.pwabucket.com/",
+        "createdAt": "2023-08-06T15:58:19Z",
+        "updatedAt": "2025-11-24T06:34:37Z",
+        "pushedAt": "2025-11-24T06:34:33Z",
+        "homepage": "https://pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
       },
       "manifest": {
-        "name": "Packer",
-        "short_name": "Packer",
-        "description": "Batch BSC Transactions with Built-in Hash Maker.",
-        "start_url": "https://packer.pwabucket.com/",
+        "name": "PWABucket",
+        "short_name": "PWABucket",
+        "start_url": "https://pwabucket.com/",
         "display": "standalone",
-        "background_color": "#0a0a0a",
-        "theme_color": "#0a0a0a",
+        "background_color": "#ffffff",
         "lang": "en",
-        "scope": "https://packer.pwabucket.com/",
-        "id": "/",
+        "scope": "https://pwabucket.com/",
+        "description": "A Progressive Web App Store",
+        "theme_color": "#ffffff",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -72,25 +68,21 @@
             "type": "image/jpg"
           },
           {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
+            "src": "screenshot-desktop-1.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpg",
+            "form_factor": "wide"
           },
           {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-desktop-wide.jpg",
-            "sizes": "1920x1080",
+            "src": "screenshot-desktop-2.jpg",
+            "sizes": "1280x720",
             "type": "image/jpg",
             "form_factor": "wide"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://packer.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-24T06:34:32.673Z"
+          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-11-25T06:35:21.954Z"
         }
       },
       "errors": []
@@ -174,128 +166,45 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-24T06:34:32.778Z"
+          "fetchedAt": "2025-11-25T06:35:21.969Z"
         }
       },
       "errors": []
     },
     {
       "repository": {
-        "id": 675343554,
-        "name": "pwabucket",
-        "fullName": "pwabucket/pwabucket",
-        "htmlUrl": "https://github.com/pwabucket/pwabucket",
-        "description": "PWABucket - Your go-to Progressive Web Apps Store.",
+        "id": 1083535447,
+        "name": "pwa-packer",
+        "fullName": "pwabucket/pwa-packer",
+        "htmlUrl": "https://github.com/pwabucket/pwa-packer",
+        "description": "Batch BSC Transactions with Built-in Hash Maker",
         "stargazersCount": 0,
         "forksCount": 0,
         "language": "TypeScript",
         "topics": [
-          "pwa"
-        ],
-        "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2025-11-23T06:31:39Z",
-        "pushedAt": "2025-11-23T06:31:35Z",
-        "homepage": "https://pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "PWABucket",
-        "short_name": "PWABucket",
-        "start_url": "https://pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#ffffff",
-        "lang": "en",
-        "scope": "https://pwabucket.com/",
-        "description": "A Progressive Web App Store",
-        "theme_color": "#ffffff",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-desktop-1.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
-          },
-          {
-            "src": "screenshot-desktop-2.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-24T06:34:32.783Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1007180361,
-        "name": "pwa-keza",
-        "fullName": "pwabucket/pwa-keza",
-        "htmlUrl": "https://github.com/pwabucket/pwa-keza",
-        "description": "Keza - Multi-Chain Wallets Generator",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "evm",
+          "bep20",
+          "crypto",
           "pwa",
-          "solana",
-          "ton"
+          "tether"
         ],
-        "createdAt": "2025-06-23T15:27:53Z",
-        "updatedAt": "2025-11-20T08:00:46Z",
-        "pushedAt": "2025-11-20T08:00:51Z",
-        "homepage": "https://keza.pwabucket.com/",
+        "createdAt": "2025-10-26T08:14:22Z",
+        "updatedAt": "2025-11-24T20:50:07Z",
+        "pushedAt": "2025-11-24T20:51:50Z",
+        "homepage": "https://packer.pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
       },
       "manifest": {
-        "name": "Keza",
-        "short_name": "Keza",
-        "description": "Multi-chain Wallet Generator",
-        "start_url": "https://keza.pwabucket.com/",
+        "name": "Packer",
+        "short_name": "Packer",
+        "description": "Batch BSC Transactions with Built-in Hash Maker.",
+        "start_url": "https://packer.pwabucket.com/",
         "display": "standalone",
-        "background_color": "#262626",
-        "theme_color": "#262626",
+        "background_color": "#0a0a0a",
+        "theme_color": "#0a0a0a",
         "lang": "en",
-        "scope": "https://keza.pwabucket.com/",
+        "scope": "https://packer.pwabucket.com/",
+        "id": "/",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -334,11 +243,110 @@
             "src": "screenshot-mobile-3.jpg",
             "sizes": "1080x1920",
             "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-desktop-wide.jpg",
+            "sizes": "1920x1080",
+            "type": "image/jpg",
+            "form_factor": "wide"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-24T06:34:32.834Z"
+          "manifestUrl": "https://packer.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-11-25T06:35:21.972Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1024439777,
+        "name": "pwa-tracker",
+        "fullName": "pwabucket/pwa-tracker",
+        "htmlUrl": "https://github.com/pwabucket/pwa-tracker",
+        "description": "A PWA log book — record investments, track withdrawals, view targets, and simulate reinvestments.",
+        "stargazersCount": 1,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "finance-app",
+          "google-drive-sync",
+          "investment-tracker",
+          "logbook",
+          "offline-first",
+          "pwa",
+          "pwabucket"
+        ],
+        "createdAt": "2025-07-22T17:44:38Z",
+        "updatedAt": "2025-11-22T07:34:11Z",
+        "pushedAt": "2025-11-22T07:34:16Z",
+        "homepage": "https://tracker.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Tracker",
+        "short_name": "Tracker",
+        "description": "A log book for your investments.",
+        "start_url": "https://tracker.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#171717",
+        "theme_color": "#171717",
+        "lang": "en",
+        "scope": "https://tracker.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-11-25T06:35:21.992Z"
         }
       },
       "errors": []
@@ -427,47 +435,44 @@
         ],
         "_meta": {
           "manifestUrl": "https://parcel.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-24T06:34:32.851Z"
+          "fetchedAt": "2025-11-25T06:35:22.022Z"
         }
       },
       "errors": []
     },
     {
       "repository": {
-        "id": 1024439777,
-        "name": "pwa-tracker",
-        "fullName": "pwabucket/pwa-tracker",
-        "htmlUrl": "https://github.com/pwabucket/pwa-tracker",
-        "description": "A PWA log book — record investments, track withdrawals, view targets, and simulate reinvestments.",
-        "stargazersCount": 1,
+        "id": 1007180361,
+        "name": "pwa-keza",
+        "fullName": "pwabucket/pwa-keza",
+        "htmlUrl": "https://github.com/pwabucket/pwa-keza",
+        "description": "Keza - Multi-Chain Wallets Generator",
+        "stargazersCount": 0,
         "forksCount": 0,
         "language": "TypeScript",
         "topics": [
-          "finance-app",
-          "google-drive-sync",
-          "investment-tracker",
-          "logbook",
-          "offline-first",
+          "evm",
           "pwa",
-          "pwabucket"
+          "solana",
+          "ton"
         ],
-        "createdAt": "2025-07-22T17:44:38Z",
-        "updatedAt": "2025-11-22T07:34:11Z",
-        "pushedAt": "2025-11-22T07:34:16Z",
-        "homepage": "https://tracker.pwabucket.com/",
+        "createdAt": "2025-06-23T15:27:53Z",
+        "updatedAt": "2025-11-20T08:00:46Z",
+        "pushedAt": "2025-11-20T08:00:51Z",
+        "homepage": "https://keza.pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
       },
       "manifest": {
-        "name": "Tracker",
-        "short_name": "Tracker",
-        "description": "A log book for your investments.",
-        "start_url": "https://tracker.pwabucket.com/",
+        "name": "Keza",
+        "short_name": "Keza",
+        "description": "Multi-chain Wallet Generator",
+        "start_url": "https://keza.pwabucket.com/",
         "display": "standalone",
-        "background_color": "#171717",
-        "theme_color": "#171717",
+        "background_color": "#262626",
+        "theme_color": "#262626",
         "lang": "en",
-        "scope": "https://tracker.pwabucket.com/",
+        "scope": "https://keza.pwabucket.com/",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -506,16 +511,11 @@
             "src": "screenshot-mobile-3.jpg",
             "sizes": "1080x1920",
             "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-24T06:34:32.911Z"
+          "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-11-25T06:35:22.023Z"
         }
       },
       "errors": []
@@ -602,7 +602,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2025-11-24T06:34:32.947Z"
+          "fetchedAt": "2025-11-25T06:35:22.045Z"
         }
       },
       "errors": []
@@ -681,7 +681,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-11-24T06:34:32.991Z"
+          "fetchedAt": "2025-11-25T06:35:22.117Z"
         }
       },
       "errors": []
