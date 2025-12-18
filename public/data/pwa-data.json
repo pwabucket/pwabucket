@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-17T06:37:17.286Z",
+  "generatedAt": "2025-12-18T06:37:04.399Z",
   "organization": "pwabucket",
   "totalRepositories": 8,
   "repositories": [
@@ -90,95 +90,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://packer.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-17T06:37:17.406Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1024439777,
-        "name": "pwa-tracker",
-        "fullName": "pwabucket/pwa-tracker",
-        "htmlUrl": "https://github.com/pwabucket/pwa-tracker",
-        "description": "A PWA log book — record investments, track withdrawals, view targets, and simulate reinvestments.",
-        "stargazersCount": 1,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "finance-app",
-          "google-drive-sync",
-          "investment-tracker",
-          "logbook",
-          "offline-first",
-          "pwa",
-          "pwabucket"
-        ],
-        "createdAt": "2025-07-22T17:44:38Z",
-        "updatedAt": "2025-12-12T19:03:54Z",
-        "pushedAt": "2025-12-12T19:05:00Z",
-        "homepage": "https://tracker.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Tracker",
-        "short_name": "Tracker",
-        "description": "A log book for your investments.",
-        "start_url": "https://tracker.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#171717",
-        "theme_color": "#171717",
-        "lang": "en",
-        "scope": "https://tracker.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-17T06:37:17.425Z"
+          "fetchedAt": "2025-12-18T06:37:04.644Z"
         }
       },
       "errors": []
@@ -197,8 +109,8 @@
           "pwa"
         ],
         "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2025-12-16T06:37:25Z",
-        "pushedAt": "2025-12-16T06:37:21Z",
+        "updatedAt": "2025-12-17T06:37:22Z",
+        "pushedAt": "2025-12-17T06:37:18Z",
         "homepage": "https://pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
@@ -262,7 +174,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-17T06:37:17.464Z"
+          "fetchedAt": "2025-12-18T06:37:04.646Z"
         }
       },
       "errors": []
@@ -341,7 +253,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-17T06:37:17.490Z"
+          "fetchedAt": "2025-12-18T06:37:04.723Z"
         }
       },
       "errors": []
@@ -430,7 +342,95 @@
         ],
         "_meta": {
           "manifestUrl": "https://parcel.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-17T06:37:17.578Z"
+          "fetchedAt": "2025-12-18T06:37:04.804Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1024439777,
+        "name": "pwa-tracker",
+        "fullName": "pwabucket/pwa-tracker",
+        "htmlUrl": "https://github.com/pwabucket/pwa-tracker",
+        "description": "A PWA log book — record investments, track withdrawals, view targets, and simulate reinvestments.",
+        "stargazersCount": 1,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "finance-app",
+          "google-drive-sync",
+          "investment-tracker",
+          "logbook",
+          "offline-first",
+          "pwa",
+          "pwabucket"
+        ],
+        "createdAt": "2025-07-22T17:44:38Z",
+        "updatedAt": "2025-12-12T19:03:54Z",
+        "pushedAt": "2025-12-12T19:05:00Z",
+        "homepage": "https://tracker.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Tracker",
+        "short_name": "Tracker",
+        "description": "A log book for your investments.",
+        "start_url": "https://tracker.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#171717",
+        "theme_color": "#171717",
+        "lang": "en",
+        "scope": "https://tracker.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-12-18T06:37:04.815Z"
         }
       },
       "errors": []
@@ -514,7 +514,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-17T06:37:17.624Z"
+          "fetchedAt": "2025-12-18T06:37:04.906Z"
         }
       },
       "errors": []
@@ -594,7 +594,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-17T06:37:17.636Z"
+          "fetchedAt": "2025-12-18T06:37:04.942Z"
         }
       },
       "errors": []
@@ -681,7 +681,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2025-12-17T06:37:17.656Z"
+          "fetchedAt": "2025-12-18T06:37:04.971Z"
         }
       },
       "errors": []
