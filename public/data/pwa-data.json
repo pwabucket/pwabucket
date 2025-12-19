@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-18T06:37:04.399Z",
+  "generatedAt": "2025-12-19T06:35:19.375Z",
   "organization": "pwabucket",
   "totalRepositories": 8,
   "repositories": [
@@ -90,7 +90,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://packer.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-18T06:37:04.644Z"
+          "fetchedAt": "2025-12-19T06:35:19.524Z"
         }
       },
       "errors": []
@@ -109,8 +109,8 @@
           "pwa"
         ],
         "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2025-12-17T06:37:22Z",
-        "pushedAt": "2025-12-17T06:37:18Z",
+        "updatedAt": "2025-12-18T06:37:09Z",
+        "pushedAt": "2025-12-18T06:37:05Z",
         "homepage": "https://pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
@@ -174,7 +174,95 @@
         ],
         "_meta": {
           "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-18T06:37:04.646Z"
+          "fetchedAt": "2025-12-19T06:35:19.536Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1024439777,
+        "name": "pwa-tracker",
+        "fullName": "pwabucket/pwa-tracker",
+        "htmlUrl": "https://github.com/pwabucket/pwa-tracker",
+        "description": "A PWA log book — record investments, track withdrawals, view targets, and simulate reinvestments.",
+        "stargazersCount": 1,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "finance-app",
+          "google-drive-sync",
+          "investment-tracker",
+          "logbook",
+          "offline-first",
+          "pwa",
+          "pwabucket"
+        ],
+        "createdAt": "2025-07-22T17:44:38Z",
+        "updatedAt": "2025-12-12T19:03:54Z",
+        "pushedAt": "2025-12-12T19:05:00Z",
+        "homepage": "https://tracker.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Tracker",
+        "short_name": "Tracker",
+        "description": "A log book for your investments.",
+        "start_url": "https://tracker.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#171717",
+        "theme_color": "#171717",
+        "lang": "en",
+        "scope": "https://tracker.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-12-19T06:35:19.580Z"
         }
       },
       "errors": []
@@ -253,7 +341,258 @@
         ],
         "_meta": {
           "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-18T06:37:04.723Z"
+          "fetchedAt": "2025-12-19T06:35:19.599Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1007180361,
+        "name": "pwa-keza",
+        "fullName": "pwabucket/pwa-keza",
+        "htmlUrl": "https://github.com/pwabucket/pwa-keza",
+        "description": "Keza - Multi-Chain Wallets Generator",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "evm",
+          "pwa",
+          "solana",
+          "ton"
+        ],
+        "createdAt": "2025-06-23T15:27:53Z",
+        "updatedAt": "2025-11-25T19:35:05Z",
+        "pushedAt": "2025-11-25T19:37:05Z",
+        "homepage": "https://keza.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Keza",
+        "short_name": "Keza",
+        "description": "Multi-chain Wallet Generator",
+        "start_url": "https://keza.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#262626",
+        "theme_color": "#262626",
+        "lang": "en",
+        "scope": "https://keza.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-12-19T06:35:19.638Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 944894603,
+        "name": "pwa-stellar-cargo",
+        "fullName": "pwabucket/pwa-stellar-cargo",
+        "htmlUrl": "https://github.com/pwabucket/pwa-stellar-cargo",
+        "description": "Stellar Cargo - A Stellar Wallet for Multiple Accounts",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": "JavaScript",
+        "topics": [
+          "pwa",
+          "stellar-network",
+          "wallet"
+        ],
+        "createdAt": "2025-03-08T07:15:14Z",
+        "updatedAt": "2025-11-23T17:08:10Z",
+        "pushedAt": "2025-11-23T17:08:06Z",
+        "homepage": "https://stellar-cargo.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Stellar Cargo",
+        "short_name": "Stellar Cargo",
+        "description": "A multi-accounts Stellar Wallet",
+        "start_url": "https://stellar-cargo.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#1d293d",
+        "theme_color": "#1d293d",
+        "lang": "en",
+        "scope": "https://stellar-cargo.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2025-12-19T06:35:19.679Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1037094232,
+        "name": "pwa-spot-pluxscore",
+        "fullName": "pwabucket/pwa-spot-pluxscore",
+        "htmlUrl": "https://github.com/pwabucket/pwa-spot-pluxscore",
+        "description": "All-in-one social media for sport fans.",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": null,
+        "topics": [
+          "pwa-spot"
+        ],
+        "createdAt": "2025-08-13T04:06:24Z",
+        "updatedAt": "2025-08-13T04:45:24Z",
+        "pushedAt": "2025-08-13T04:45:21Z",
+        "homepage": "https://pluxscore.com.ng",
+        "hasPages": false,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Pluxscore",
+        "short_name": "Pluxscore",
+        "description": "All-in-one social media for sport fans",
+        "start_url": "https://pluxscore.com.ng/",
+        "scope": "https://pluxscore.com.ng/",
+        "display": "standalone",
+        "background_color": "#000000",
+        "theme_color": "#000000",
+        "lang": "en",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-5.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
+          "fetchedAt": "2025-12-19T06:35:19.692Z"
         }
       },
       "errors": []
@@ -342,346 +681,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://parcel.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-18T06:37:04.804Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1024439777,
-        "name": "pwa-tracker",
-        "fullName": "pwabucket/pwa-tracker",
-        "htmlUrl": "https://github.com/pwabucket/pwa-tracker",
-        "description": "A PWA log book — record investments, track withdrawals, view targets, and simulate reinvestments.",
-        "stargazersCount": 1,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "finance-app",
-          "google-drive-sync",
-          "investment-tracker",
-          "logbook",
-          "offline-first",
-          "pwa",
-          "pwabucket"
-        ],
-        "createdAt": "2025-07-22T17:44:38Z",
-        "updatedAt": "2025-12-12T19:03:54Z",
-        "pushedAt": "2025-12-12T19:05:00Z",
-        "homepage": "https://tracker.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Tracker",
-        "short_name": "Tracker",
-        "description": "A log book for your investments.",
-        "start_url": "https://tracker.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#171717",
-        "theme_color": "#171717",
-        "lang": "en",
-        "scope": "https://tracker.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-18T06:37:04.815Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 944894603,
-        "name": "pwa-stellar-cargo",
-        "fullName": "pwabucket/pwa-stellar-cargo",
-        "htmlUrl": "https://github.com/pwabucket/pwa-stellar-cargo",
-        "description": "Stellar Cargo - A Stellar Wallet for Multiple Accounts",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "JavaScript",
-        "topics": [
-          "pwa",
-          "stellar-network",
-          "wallet"
-        ],
-        "createdAt": "2025-03-08T07:15:14Z",
-        "updatedAt": "2025-11-23T17:08:10Z",
-        "pushedAt": "2025-11-23T17:08:06Z",
-        "homepage": "https://stellar-cargo.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Stellar Cargo",
-        "short_name": "Stellar Cargo",
-        "description": "A multi-accounts Stellar Wallet",
-        "start_url": "https://stellar-cargo.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#1d293d",
-        "theme_color": "#1d293d",
-        "lang": "en",
-        "scope": "https://stellar-cargo.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-18T06:37:04.906Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1007180361,
-        "name": "pwa-keza",
-        "fullName": "pwabucket/pwa-keza",
-        "htmlUrl": "https://github.com/pwabucket/pwa-keza",
-        "description": "Keza - Multi-Chain Wallets Generator",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "evm",
-          "pwa",
-          "solana",
-          "ton"
-        ],
-        "createdAt": "2025-06-23T15:27:53Z",
-        "updatedAt": "2025-11-25T19:35:05Z",
-        "pushedAt": "2025-11-25T19:37:05Z",
-        "homepage": "https://keza.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Keza",
-        "short_name": "Keza",
-        "description": "Multi-chain Wallet Generator",
-        "start_url": "https://keza.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#262626",
-        "theme_color": "#262626",
-        "lang": "en",
-        "scope": "https://keza.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2025-12-18T06:37:04.942Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1037094232,
-        "name": "pwa-spot-pluxscore",
-        "fullName": "pwabucket/pwa-spot-pluxscore",
-        "htmlUrl": "https://github.com/pwabucket/pwa-spot-pluxscore",
-        "description": "All-in-one social media for sport fans.",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": null,
-        "topics": [
-          "pwa-spot"
-        ],
-        "createdAt": "2025-08-13T04:06:24Z",
-        "updatedAt": "2025-08-13T04:45:24Z",
-        "pushedAt": "2025-08-13T04:45:21Z",
-        "homepage": "https://pluxscore.com.ng",
-        "hasPages": false,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Pluxscore",
-        "short_name": "Pluxscore",
-        "description": "All-in-one social media for sport fans",
-        "start_url": "https://pluxscore.com.ng/",
-        "scope": "https://pluxscore.com.ng/",
-        "display": "standalone",
-        "background_color": "#000000",
-        "theme_color": "#000000",
-        "lang": "en",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-5.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2025-12-18T06:37:04.971Z"
+          "fetchedAt": "2025-12-19T06:35:19.719Z"
         }
       },
       "errors": []
