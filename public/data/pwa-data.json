@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-12T06:40:54.200Z",
+  "generatedAt": "2026-01-13T06:38:18.797Z",
   "organization": "pwabucket",
   "totalRepositories": 8,
   "repositories": [
@@ -17,8 +17,8 @@
           "pwa"
         ],
         "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2026-01-11T06:35:53Z",
-        "pushedAt": "2026-01-11T06:35:50Z",
+        "updatedAt": "2026-01-12T06:40:59Z",
+        "pushedAt": "2026-01-12T06:40:55Z",
         "homepage": "https://pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
@@ -82,7 +82,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-12T06:40:54.443Z"
+          "fetchedAt": "2026-01-13T06:38:18.966Z"
         }
       },
       "errors": []
@@ -166,7 +166,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-12T06:40:54.481Z"
+          "fetchedAt": "2026-01-13T06:38:18.981Z"
         }
       },
       "errors": []
@@ -258,7 +258,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://packer.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-12T06:40:54.491Z"
+          "fetchedAt": "2026-01-13T06:38:19.127Z"
         }
       },
       "errors": []
@@ -337,7 +337,87 @@
         ],
         "_meta": {
           "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-12T06:40:54.499Z"
+          "fetchedAt": "2026-01-13T06:38:19.195Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1007180361,
+        "name": "pwa-keza",
+        "fullName": "pwabucket/pwa-keza",
+        "htmlUrl": "https://github.com/pwabucket/pwa-keza",
+        "description": "Keza - Multi-Chain Wallets Generator",
+        "stargazersCount": 0,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "evm",
+          "pwa",
+          "solana",
+          "ton"
+        ],
+        "createdAt": "2025-06-23T15:27:53Z",
+        "updatedAt": "2025-11-25T19:35:05Z",
+        "pushedAt": "2025-11-25T19:37:05Z",
+        "homepage": "https://keza.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Keza",
+        "short_name": "Keza",
+        "description": "Multi-chain Wallet Generator",
+        "start_url": "https://keza.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#262626",
+        "theme_color": "#262626",
+        "lang": "en",
+        "scope": "https://keza.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2026-01-13T06:38:19.297Z"
         }
       },
       "errors": []
@@ -425,7 +505,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-12T06:40:54.512Z"
+          "fetchedAt": "2026-01-13T06:38:19.334Z"
         }
       },
       "errors": []
@@ -512,7 +592,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2026-01-12T06:40:54.560Z"
+          "fetchedAt": "2026-01-13T06:38:19.334Z"
         }
       },
       "errors": []
@@ -601,87 +681,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://parcel.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-12T06:40:54.612Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1007180361,
-        "name": "pwa-keza",
-        "fullName": "pwabucket/pwa-keza",
-        "htmlUrl": "https://github.com/pwabucket/pwa-keza",
-        "description": "Keza - Multi-Chain Wallets Generator",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "evm",
-          "pwa",
-          "solana",
-          "ton"
-        ],
-        "createdAt": "2025-06-23T15:27:53Z",
-        "updatedAt": "2025-11-25T19:35:05Z",
-        "pushedAt": "2025-11-25T19:37:05Z",
-        "homepage": "https://keza.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Keza",
-        "short_name": "Keza",
-        "description": "Multi-chain Wallet Generator",
-        "start_url": "https://keza.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#262626",
-        "theme_color": "#262626",
-        "lang": "en",
-        "scope": "https://keza.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-12T06:40:54.912Z"
+          "fetchedAt": "2026-01-13T06:38:19.389Z"
         }
       },
       "errors": []
