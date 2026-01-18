@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-17T06:34:22.097Z",
+  "generatedAt": "2026-01-18T06:34:55.874Z",
   "organization": "pwabucket",
   "totalRepositories": 8,
   "repositories": [
@@ -17,8 +17,8 @@
           "pwa"
         ],
         "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2026-01-16T06:38:13Z",
-        "pushedAt": "2026-01-16T06:38:10Z",
+        "updatedAt": "2026-01-17T06:34:27Z",
+        "pushedAt": "2026-01-17T06:34:23Z",
         "homepage": "https://pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
@@ -82,7 +82,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-17T06:34:22.301Z"
+          "fetchedAt": "2026-01-18T06:34:56.059Z"
         }
       },
       "errors": []
@@ -166,7 +166,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-17T06:34:22.302Z"
+          "fetchedAt": "2026-01-18T06:34:56.103Z"
         }
       },
       "errors": []
@@ -258,7 +258,95 @@
         ],
         "_meta": {
           "manifestUrl": "https://packer.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-17T06:34:22.359Z"
+          "fetchedAt": "2026-01-18T06:34:56.156Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 1024439777,
+        "name": "pwa-tracker",
+        "fullName": "pwabucket/pwa-tracker",
+        "htmlUrl": "https://github.com/pwabucket/pwa-tracker",
+        "description": "A PWA log book — record investments, track withdrawals, view targets, and simulate reinvestments.",
+        "stargazersCount": 1,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "finance-app",
+          "google-drive-sync",
+          "investment-tracker",
+          "logbook",
+          "offline-first",
+          "pwa",
+          "pwabucket"
+        ],
+        "createdAt": "2025-07-22T17:44:38Z",
+        "updatedAt": "2025-12-12T19:03:54Z",
+        "pushedAt": "2025-12-12T19:05:00Z",
+        "homepage": "https://tracker.pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "Tracker",
+        "short_name": "Tracker",
+        "description": "A log book for your investments.",
+        "start_url": "https://tracker.pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#171717",
+        "theme_color": "#171717",
+        "lang": "en",
+        "scope": "https://tracker.pwabucket.com/",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2026-01-18T06:34:56.198Z"
         }
       },
       "errors": []
@@ -337,7 +425,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-17T06:34:22.387Z"
+          "fetchedAt": "2026-01-18T06:34:56.200Z"
         }
       },
       "errors": []
@@ -426,7 +514,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://parcel.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-17T06:34:22.416Z"
+          "fetchedAt": "2026-01-18T06:34:56.235Z"
         }
       },
       "errors": []
@@ -506,7 +594,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-17T06:34:22.451Z"
+          "fetchedAt": "2026-01-18T06:34:56.237Z"
         }
       },
       "errors": []
@@ -593,95 +681,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2026-01-17T06:34:22.483Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 1024439777,
-        "name": "pwa-tracker",
-        "fullName": "pwabucket/pwa-tracker",
-        "htmlUrl": "https://github.com/pwabucket/pwa-tracker",
-        "description": "A PWA log book — record investments, track withdrawals, view targets, and simulate reinvestments.",
-        "stargazersCount": 1,
-        "forksCount": 0,
-        "language": "TypeScript",
-        "topics": [
-          "finance-app",
-          "google-drive-sync",
-          "investment-tracker",
-          "logbook",
-          "offline-first",
-          "pwa",
-          "pwabucket"
-        ],
-        "createdAt": "2025-07-22T17:44:38Z",
-        "updatedAt": "2025-12-12T19:03:54Z",
-        "pushedAt": "2025-12-12T19:05:00Z",
-        "homepage": "https://tracker.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Tracker",
-        "short_name": "Tracker",
-        "description": "A log book for your investments.",
-        "start_url": "https://tracker.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#171717",
-        "theme_color": "#171717",
-        "lang": "en",
-        "scope": "https://tracker.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-01-17T06:34:22.500Z"
+          "fetchedAt": "2026-01-18T06:34:56.262Z"
         }
       },
       "errors": []
