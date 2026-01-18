@@ -30,7 +30,7 @@ export const AppPhotoAlbum = ({
             <div
               className={cn(
                 "absolute inset-0 ",
-                "bg-stone-800/20 backdrop-blur-xs",
+                "bg-neutral-800/20 backdrop-blur-xs",
                 "flex justify-center items-center",
                 "text-white text-lg font-fredoka-one",
               )}

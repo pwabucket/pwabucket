@@ -2,14 +2,14 @@ import { cn } from "@/lib/utils";
 import { memo } from "react";
 
 export const AppScreenshot = memo(function (
-  props: React.ComponentProps<"img">
+  props: React.ComponentProps<"img">,
 ) {
   return (
     <img
       {...props}
       className={cn(
-        "basis-0 cursor-pointer rounded-2xl h-52 bg-stone-800",
-        props.className
+        "basis-0 cursor-pointer rounded-2xl h-52 bg-neutral-800",
+        props.className,
       )}
     />
   );

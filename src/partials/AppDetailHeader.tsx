@@ -26,14 +26,14 @@ export default memo(function AppDetailHeader({ app }: { app: AppItem }) {
         <h1 className="text-3xl font-light">{name}</h1>
 
         {/* App Description */}
-        <p className="text-stone-400">{description}</p>
+        <p className="text-neutral-400">{description}</p>
 
         {/* Spot App */}
         {isSpotApp && <span className="text-xs text-orange-500">SPOT</span>}
 
         {/* Current App */}
         {isCurrentApp && (
-          <p className="text-stone-400 text-sm">Currently Viewing App</p>
+          <p className="text-neutral-400 text-sm">Currently Viewing App</p>
         )}
 
         {/* Open */}

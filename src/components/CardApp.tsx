@@ -22,7 +22,7 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
         className={cn(
           "flex flex-col gap-2 p-4",
           "bg-neutral-900",
-          "rounded-xl overflow-clip"
+          "rounded-xl overflow-clip",
         )}
         title={`${name} - ${description}`}
       >
@@ -39,7 +39,7 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
             <h1
               className={cn(
                 "font-bold leading-none truncate",
-                "max-md:text-xs"
+                "max-md:text-xs",
               )}
             >
               {name}
@@ -47,7 +47,10 @@ export default memo(function CardApp({ app }: { app: AppItem }) {
 
             {/* App Description */}
             <p
-              className={cn("text-xs leading-none truncate", "text-stone-400")}
+              className={cn(
+                "text-xs leading-none truncate",
+                "text-neutral-400",
+              )}
             >
               {description}
             </p>
