@@ -1,38 +1,40 @@
 {
-  "generatedAt": "2026-03-02T07:02:08.436Z",
+  "generatedAt": "2026-03-03T06:56:23.953Z",
   "organization": "pwabucket",
   "totalRepositories": 8,
   "repositories": [
     {
       "repository": {
-        "id": 675343554,
-        "name": "pwabucket",
-        "fullName": "pwabucket/pwabucket",
-        "htmlUrl": "https://github.com/pwabucket/pwabucket",
-        "description": "PWABucket - Your go-to Progressive Web Apps Store.",
-        "stargazersCount": 1,
+        "id": 944894603,
+        "name": "pwa-stellar-cargo",
+        "fullName": "pwabucket/pwa-stellar-cargo",
+        "htmlUrl": "https://github.com/pwabucket/pwa-stellar-cargo",
+        "description": "Stellar Cargo - A Stellar Wallet for Multiple Accounts",
+        "stargazersCount": 0,
         "forksCount": 0,
-        "language": "TypeScript",
+        "language": "JavaScript",
         "topics": [
-          "pwa"
+          "pwa",
+          "stellar-network",
+          "wallet"
         ],
-        "createdAt": "2023-08-06T15:58:19Z",
-        "updatedAt": "2026-03-01T06:51:43Z",
-        "pushedAt": "2026-03-01T06:51:40Z",
-        "homepage": "https://pwabucket.com/",
+        "createdAt": "2025-03-08T07:15:14Z",
+        "updatedAt": "2026-01-07T17:19:45Z",
+        "pushedAt": "2026-01-07T17:19:53Z",
+        "homepage": "https://stellar-cargo.pwabucket.com/",
         "hasPages": true,
         "defaultBranch": "main"
       },
       "manifest": {
-        "name": "PWABucket",
-        "short_name": "PWABucket",
-        "start_url": "https://pwabucket.com/",
+        "name": "Stellar Cargo",
+        "short_name": "Stellar Cargo",
+        "description": "A multi-accounts Stellar Wallet",
+        "start_url": "https://stellar-cargo.pwabucket.com/",
         "display": "standalone",
-        "background_color": "#ffffff",
+        "background_color": "#1d293d",
+        "theme_color": "#1d293d",
         "lang": "en",
-        "scope": "https://pwabucket.com/",
-        "description": "A Progressive Web App Store",
-        "theme_color": "#ffffff",
+        "scope": "https://stellar-cargo.pwabucket.com/",
         "icons": [
           {
             "src": "pwa-64x64.png",
@@ -68,21 +70,19 @@
             "type": "image/jpg"
           },
           {
-            "src": "screenshot-desktop-1.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
+            "src": "screenshot-mobile-3.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
           },
           {
-            "src": "screenshot-desktop-2.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpg",
-            "form_factor": "wide"
+            "src": "screenshot-mobile-4.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
           }
         ],
         "_meta": {
-          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-03-02T07:02:08.581Z"
+          "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2026-03-03T06:56:24.141Z"
         }
       },
       "errors": []
@@ -174,7 +174,91 @@
         ],
         "_meta": {
           "manifestUrl": "https://packer.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-03-02T07:02:08.634Z"
+          "fetchedAt": "2026-03-03T06:56:24.156Z"
+        }
+      },
+      "errors": []
+    },
+    {
+      "repository": {
+        "id": 675343554,
+        "name": "pwabucket",
+        "fullName": "pwabucket/pwabucket",
+        "htmlUrl": "https://github.com/pwabucket/pwabucket",
+        "description": "PWABucket - Your go-to Progressive Web Apps Store.",
+        "stargazersCount": 1,
+        "forksCount": 0,
+        "language": "TypeScript",
+        "topics": [
+          "pwa"
+        ],
+        "createdAt": "2023-08-06T15:58:19Z",
+        "updatedAt": "2026-03-02T07:02:13Z",
+        "pushedAt": "2026-03-02T07:02:09Z",
+        "homepage": "https://pwabucket.com/",
+        "hasPages": true,
+        "defaultBranch": "main"
+      },
+      "manifest": {
+        "name": "PWABucket",
+        "short_name": "PWABucket",
+        "start_url": "https://pwabucket.com/",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "lang": "en",
+        "scope": "https://pwabucket.com/",
+        "description": "A Progressive Web App Store",
+        "theme_color": "#ffffff",
+        "icons": [
+          {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ],
+        "screenshots": [
+          {
+            "src": "screenshot-mobile-1.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-mobile-2.jpg",
+            "sizes": "1080x1920",
+            "type": "image/jpg"
+          },
+          {
+            "src": "screenshot-desktop-1.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpg",
+            "form_factor": "wide"
+          },
+          {
+            "src": "screenshot-desktop-2.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpg",
+            "form_factor": "wide"
+          }
+        ],
+        "_meta": {
+          "manifestUrl": "https://pwabucket.com/manifest.webmanifest",
+          "fetchedAt": "2026-03-03T06:56:24.166Z"
         }
       },
       "errors": []
@@ -262,91 +346,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://tracker.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-03-02T07:02:08.742Z"
-        }
-      },
-      "errors": []
-    },
-    {
-      "repository": {
-        "id": 944894603,
-        "name": "pwa-stellar-cargo",
-        "fullName": "pwabucket/pwa-stellar-cargo",
-        "htmlUrl": "https://github.com/pwabucket/pwa-stellar-cargo",
-        "description": "Stellar Cargo - A Stellar Wallet for Multiple Accounts",
-        "stargazersCount": 0,
-        "forksCount": 0,
-        "language": "JavaScript",
-        "topics": [
-          "pwa",
-          "stellar-network",
-          "wallet"
-        ],
-        "createdAt": "2025-03-08T07:15:14Z",
-        "updatedAt": "2026-01-07T17:19:45Z",
-        "pushedAt": "2026-01-07T17:19:53Z",
-        "homepage": "https://stellar-cargo.pwabucket.com/",
-        "hasPages": true,
-        "defaultBranch": "main"
-      },
-      "manifest": {
-        "name": "Stellar Cargo",
-        "short_name": "Stellar Cargo",
-        "description": "A multi-accounts Stellar Wallet",
-        "start_url": "https://stellar-cargo.pwabucket.com/",
-        "display": "standalone",
-        "background_color": "#1d293d",
-        "theme_color": "#1d293d",
-        "lang": "en",
-        "scope": "https://stellar-cargo.pwabucket.com/",
-        "icons": [
-          {
-            "src": "pwa-64x64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            "src": "pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          },
-          {
-            "src": "maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-          }
-        ],
-        "screenshots": [
-          {
-            "src": "screenshot-mobile-1.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-2.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-3.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          },
-          {
-            "src": "screenshot-mobile-4.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpg"
-          }
-        ],
-        "_meta": {
-          "manifestUrl": "https://stellar-cargo.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-03-02T07:02:08.753Z"
+          "fetchedAt": "2026-03-03T06:56:24.207Z"
         }
       },
       "errors": []
@@ -425,7 +425,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://safe.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-03-02T07:02:08.792Z"
+          "fetchedAt": "2026-03-03T06:56:24.222Z"
         }
       },
       "errors": []
@@ -514,7 +514,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://parcel.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-03-02T07:02:08.813Z"
+          "fetchedAt": "2026-03-03T06:56:24.230Z"
         }
       },
       "errors": []
@@ -601,7 +601,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://raw.githubusercontent.com/pwabucket/pwa-spot-pluxscore/main/manifest.webmanifest",
-          "fetchedAt": "2026-03-02T07:02:08.831Z"
+          "fetchedAt": "2026-03-03T06:56:24.260Z"
         }
       },
       "errors": []
@@ -681,7 +681,7 @@
         ],
         "_meta": {
           "manifestUrl": "https://keza.pwabucket.com/manifest.webmanifest",
-          "fetchedAt": "2026-03-02T07:02:08.863Z"
+          "fetchedAt": "2026-03-03T06:56:24.301Z"
         }
       },
       "errors": []
