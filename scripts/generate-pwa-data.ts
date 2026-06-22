@@ -2,17 +2,17 @@
 
 import "dotenv/config";
 
-import axios from "axios";
-import { Octokit } from "@octokit/rest";
-import { existsSync, mkdirSync, writeFileSync } from "fs";
-import { join } from "path";
-
 import type {
   AppItem,
   AppManifest,
   AppsCollectionResult,
   RepositoryResult,
 } from "../src/types/app";
+import { existsSync, mkdirSync, writeFileSync } from "fs";
+
+import { Octokit } from "@octokit/rest";
+import axios from "axios";
+import { join } from "path";
 
 const config = {
   organization: process.env.ORGANIZATION,
@@ -26,7 +26,7 @@ const config = {
 if (!config.githubToken) {
   console.warn("❌ GITHUB_TOKEN environment variable is required");
   console.warn(
-    "💡 You can get a token from: https://github.com/settings/tokens"
+    "💡 You can get a token from: https://github.com/settings/tokens",
   );
 }
 
@@ -73,7 +73,7 @@ async function fetchManifest(repo: RepositoryResult) {
       return manifest;
     }
   } catch (error) {
-    console.log(`❌ Failed: ${error.message}`);
+    console.log(`❌ Failed: ${(error as { message: string }).message}`);
   }
 
   return null;
@@ -82,7 +82,7 @@ async function fetchManifest(repo: RepositoryResult) {
 async function collectPWAData() {
   try {
     console.log(
-      `🔍 Searching for PWA repositories in organization: ${config.organization}`
+      `🔍 Searching for PWA repositories in organization: ${config.organization}`,
     );
 
     const searchResult = await octokit.search.repos({
@@ -93,7 +93,7 @@ async function collectPWAData() {
     });
 
     console.log(
-      `📦 Found ${searchResult.data.items.length} repositories with 'pwa' or 'pwa-spot' topic`
+      `📦 Found ${searchResult.data.items.length} repositories with 'pwa' or 'pwa-spot' topic`,
     );
 
     const pwaData: AppsCollectionResult = {
@@ -143,13 +143,15 @@ async function collectPWAData() {
             if (manifest) {
               repoData.manifest = manifest;
               console.log(
-                `✅ Found manifest at: ${manifest._meta.manifestUrl}`
+                `✅ Found manifest at: ${manifest._meta.manifestUrl}`,
               );
             } else {
               console.log(`❌ No manifest found`);
             }
           } catch (error) {
-            console.log(`💥 Error fetching manifest: ${error.message}`);
+            console.log(
+              `💥 Error fetching manifest: ${(error as { message: string }).message}`,
+            );
             repoData.errors.push({
               type: "live_manifest",
               message: (error as Error).message,
@@ -160,7 +162,7 @@ async function collectPWAData() {
         }
 
         pwaData.repositories.push(repoData);
-      })
+      }),
     );
 
     if (!existsSync(config.outputDir)) {
@@ -176,7 +178,7 @@ async function collectPWAData() {
 
     const withManifest = pwaData.repositories.filter((r) => r.manifest).length;
     const withErrors = pwaData.repositories.filter(
-      (r) => r.errors.length > 0
+      (r) => r.errors.length > 0,
     ).length;
 
     console.log(`\n📊 Summary:`);
@@ -192,7 +194,7 @@ async function collectPWAData() {
           console.log(
             `• ${r.repository.fullName}: ${r.errors
               .map((e) => e.type)
-              .join(", ")}`
+              .join(", ")}`,
           );
         });
     }
@@ -210,7 +212,7 @@ async function collectPWAData() {
     console.error("💥 Error collecting PWA data:", error);
     return {
       success: false,
-      error: error.message,
+      error: (error as { message: string }).message,
     };
   }
 }
